@@ -33,6 +33,19 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-contrib-concat
+     * Concat javascripts and other files
+     ************************************/
+    concat: {
+      javascripts: {
+        src: [
+          'www/assets/src/javascripts/index.js'
+        ],
+        dest: 'www/assets/dist/js/index.js'
+      }
+    },
+
+    /************************************
      * grunt-bump
      * Bump package version, create tag, commit, push...
      ************************************/
@@ -60,6 +73,9 @@ module.exports = function (grunt) {
 
   // CSS dist task
   grunt.registerTask('dist-stylesheets', ['less']);
+
+  // JS dist task
+  grunt.registerTask('dist-javascripts', ['concat']);
 
   // Use grunt-bump for changing version number
   grunt.loadNpmTasks('grunt-bump');
