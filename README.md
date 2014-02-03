@@ -12,7 +12,10 @@ Instale os pacotes do ```node``` e depois rode o [Grunt](http://gruntjs.com/):
 $ npm install && grunt
 ```
 
-Após isso, o aplicativo deve renderizar no navegador na porta 9000 ex.: ```http://localhost:9000/```
 
 ## Como testar
+
+É possível renderizar o App direto no browser. Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada. Exemplo de build para iOS:
+
+```phonegap build ios```
 
