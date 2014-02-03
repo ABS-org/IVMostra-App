@@ -1,6 +1,6 @@
 {
   "name": "ivmostra-app",
-  "version": "=0.0.19",
+  "version": "0.0.19=0.0.19",
   "description": "Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.",
   "repository": {
     "type": "git",
