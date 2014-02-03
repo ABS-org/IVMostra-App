@@ -1,0 +1,19 @@
+{
+  "name": "ivmostra-app",
+  "version": "0.0.0",
+  "description": "Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ABS-org/ivmostra-app.git"
+  },
+  "keywords": [
+    "mostra",
+    "saude",
+    "brasil"
+  ],
+  "author": "Daniel Torres <daniel@updigital.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ABS-org/ivmostra-app/issues"
+  }
+}
