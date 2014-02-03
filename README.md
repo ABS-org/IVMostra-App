@@ -21,6 +21,10 @@ Exemplo de build para iOS:
 
 ```phonegap build ios```
 
+para Android:
+
+```phonegap build android```
+
 
 
 ## Copyright
