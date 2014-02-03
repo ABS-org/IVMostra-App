@@ -12,6 +12,27 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     /************************************
+     * grunt-contrib-less
+     * LESS Task, compile and minify stylesheets
+     ************************************/
+    less: {
+      compile: {
+        files: {
+          'www/assets/dist/css/styles.css': 'www/assets/src/stylesheets/build.less'
+        }
+      },
+      minify: {
+        options: {
+          cleancss: true,
+          report: 'min'
+        },
+        files: {
+          'www/assets/dist/css/styles.min.css': 'www/assets/dist/css/styles.css'
+        }
+      }
+    },
+
+    /************************************
      * grunt-bump
      * Bump package version, create tag, commit, push...
      ************************************/
@@ -36,6 +57,9 @@ module.exports = function (grunt) {
 
   // Load multiple grunt tasks using globbing patterns
   require('load-grunt-tasks')(grunt, {scope: 'devDependencies'});
+
+  // CSS dist task
+  grunt.registerTask('dist-stylesheets', ['less']);
 
   // Use grunt-bump for changing version number
   grunt.loadNpmTasks('grunt-bump');
