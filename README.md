@@ -21,3 +21,8 @@ Exemplo de build para iOS:
 
 ```phonegap build ios```
 
+
+
+## Copyright
+
+ABS-org © 2014 - IV Mostra
