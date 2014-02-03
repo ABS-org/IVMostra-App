@@ -15,7 +15,9 @@ $ npm install && grunt
 
 ## Como testar
 
-É possível renderizar o App direto no browser. Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada. Exemplo de build para iOS:
+É possível renderizar o App direto no browser. Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada.
+
+Exemplo de build para iOS:
 
 ```phonegap build ios```
 
