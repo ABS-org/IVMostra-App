@@ -14,3 +14,5 @@ $ npm install && grunt
 
 Após isso, o aplicativo deve renderizar no navegador na porta 9000 ex.: ```http://localhost:9000/```
 
+## Como testar
+
