@@ -18,7 +18,7 @@ module.exports = function (grunt) {
     less: {
       compile: {
         files: {
-          'www/assets/dist/css/styles.css': 'www/assets/src/stylesheets/build.less'
+          'www/dist/css/styles.css': 'www/src/stylesheets/build.less'
         }
       },
       minify: {
@@ -27,7 +27,7 @@ module.exports = function (grunt) {
           report: 'min'
         },
         files: {
-          'www/assets/dist/css/styles.min.css': 'www/assets/dist/css/styles.css'
+          'www/dist/css/styles.min.css': 'www/dist/css/styles.css'
         }
       }
     },
@@ -39,9 +39,9 @@ module.exports = function (grunt) {
     concat: {
       javascripts: {
         src: [
-          'www/assets/src/javascripts/index.js'
+          'www/src/javascripts/index.js'
         ],
-        dest: 'www/assets/dist/js/index.js'
+        dest: 'www/dist/js/index.js'
       }
     },
 
@@ -57,7 +57,7 @@ module.exports = function (grunt) {
         }
       },
       stylesheets: {
-        files: 'www/assets/src/stylesheets/**/*.less',
+        files: 'www/src/stylesheets/**/*.less',
         tasks: ['less'],
         options: {
           livereload: true
