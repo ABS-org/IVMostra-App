@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-               BuildableName = "IVMostra.app"
-               BlueprintName = "IVMostra"
-               ReferencedContainer = "container:IVMostra.xcodeproj">
+               BuildableName = "IV Mostra.app"
+               BlueprintName = "IV Mostra"
+               ReferencedContainer = "container:IV Mostra.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "IVMostra.app"
-            BlueprintName = "IVMostra"
-            ReferencedContainer = "container:IVMostra.xcodeproj">
+            BuildableName = "IV Mostra.app"
+            BlueprintName = "IV Mostra"
+            ReferencedContainer = "container:IV Mostra.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "IVMostra.app"
-            BlueprintName = "IVMostra"
-            ReferencedContainer = "container:IVMostra.xcodeproj">
+            BuildableName = "IV Mostra.app"
+            BlueprintName = "IV Mostra"
+            ReferencedContainer = "container:IV Mostra.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1D6058900D05DD3D006BFB54"
-            BuildableName = "IVMostra.app"
-            BlueprintName = "IVMostra"
-            ReferencedContainer = "container:IVMostra.xcodeproj">
+            BuildableName = "IV Mostra.app"
+            BlueprintName = "IV Mostra"
+            ReferencedContainer = "container:IV Mostra.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

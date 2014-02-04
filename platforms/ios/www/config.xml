@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.app.ivmostra" version="0.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>IVMostra</name>
+    <name>IV Mostra</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="daniel@updigital.me" href="http://danieltorres.me">
+        Daniel Torres
     </author>
     <feature name="http://api.phonegap.com/1.0/device" />
     <preference name="permissions" value="none" />
