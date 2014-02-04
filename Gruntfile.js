@@ -42,7 +42,7 @@ module.exports = function (grunt) {
           // Controllers
 
           // Libraries
-          'www/bower_components/zeptojs/src/zepto.js',
+          'www/bower_components/zepto/zepto.min.js',
           'www/bower_components/fastclick/lib/fastclick.js',
           'www/bower_components/iscroll/build/iscroll.js',
           'www/bower_components/hammerjs/hammer.min.js',
