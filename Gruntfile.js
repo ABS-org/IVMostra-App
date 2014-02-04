@@ -39,9 +39,15 @@ module.exports = function (grunt) {
     concat: {
       javascripts: {
         src: [
-          'www/src/javascripts/index.js'
+          // Controllers
+
+          // Libraries
+          'www/bower_components/hammerjs/hammer.min.js',
+
+          // App
+          
         ],
-        dest: 'www/dist/js/index.js'
+        dest: 'www/dist/js/main.js'
       }
     },
 
