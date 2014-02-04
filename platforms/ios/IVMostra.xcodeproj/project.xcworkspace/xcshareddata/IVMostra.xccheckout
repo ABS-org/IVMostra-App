@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>525F1265-4D9D-48C6-B757-C8EAEA78E32E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IVMostra</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07754755-6D11-41CF-902E-A9DB8718D2E4</key>
+		<string>ssh://github.com/ABS-org/ivmostra-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/IVMostra.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07754755-6D11-41CF-902E-A9DB8718D2E4</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/ABS-org/ivmostra-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07754755-6D11-41CF-902E-A9DB8718D2E4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07754755-6D11-41CF-902E-A9DB8718D2E4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ivmostra-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
