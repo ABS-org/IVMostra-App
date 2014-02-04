@@ -50,7 +50,9 @@ module.exports = function (grunt) {
           'www/bower_components/hammerjs/hammer.min.js',
 
           // App
-          
+          'www/src/javascripts/IVMostra.js',
+          'www/src/javascripts/History.js',
+
         ],
         dest: 'www/dist/js/main.js'
       }
