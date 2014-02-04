@@ -1,0 +1,23 @@
+{
+  "name": "ivmostra-app",
+  "version": "0.0.19",
+  "authors": [
+    "Daniel Torres <daniel@updigital.me>"
+  ],
+  "description": "Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.",
+  "keywords": [
+    "mostra",
+    "saúde",
+    "brasil"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower_components",
+    "test",
+    "tests"
+  ]
+}
