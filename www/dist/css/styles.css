@@ -1,4 +1,4 @@
-/* Build file */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
 * {
   margin: 0;
   padding: 0;
@@ -50,13 +50,11 @@ menu {
   -webkit-transform: rotateX(266deg);
 }
 body {
-  font-family: 'Roboto', sans-serif;
   width: 100%;
-  background: #fff;
   overflow: hidden;
   color: #27455f;
 }
-header #header-app {
+header#header-app {
   width: 100%;
   height: 100px;
   background: #eee;
