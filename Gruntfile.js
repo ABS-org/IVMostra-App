@@ -43,6 +43,11 @@ module.exports = function (grunt) {
           'www/src/javascripts/controllers/AppController.js',
           'www/src/javascripts/controllers/HomeController.js',
           'www/src/javascripts/controllers/AboutController.js',
+          'www/src/javascripts/controllers/Page1Controller.js',
+          'www/src/javascripts/controllers/Page2Controller.js',
+          'www/src/javascripts/controllers/Page3Controller.js',
+          'www/src/javascripts/controllers/Page4Controller.js',
+          'www/src/javascripts/controllers/Page5Controller.js',
 
           // Libraries
           'www/bower_components/zepto/zepto.min.js',
