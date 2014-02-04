@@ -52,7 +52,9 @@ module.exports = function (grunt) {
           // App
           'www/src/javascripts/IVMostra.js',
           'www/src/javascripts/History.js',
-
+          'www/src/javascripts/Navigator.js',
+          'www/src/javascripts/Transition.js',
+          'www/src/javascripts/PageLoad.js'
         ],
         dest: 'www/dist/js/main.js'
       }
