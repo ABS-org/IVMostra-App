@@ -22,6 +22,7 @@
   ],
   "devDependencies": {
     "hammerjs": "~1.0.6",
-    "fastclick": "~0.6.11"
+    "fastclick": "~0.6.11",
+    "zeptojs": "~1.1.2"
   }
 }
