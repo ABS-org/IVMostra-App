@@ -23,6 +23,7 @@
   "devDependencies": {
     "hammerjs": "~1.0.6",
     "fastclick": "~0.6.11",
-    "zeptojs": "~1.1.2"
+    "zeptojs": "~1.1.2",
+    "iscroll": "~5.1.1"
   }
 }
