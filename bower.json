@@ -21,6 +21,7 @@
     "tests"
   ],
   "devDependencies": {
-    "hammerjs": "~1.0.6"
+    "hammerjs": "~1.0.6",
+    "fastclick": "~0.6.11"
   }
 }
