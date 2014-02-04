@@ -4,3 +4,6 @@
 .DS_Store
 build
 www/phonegap.js
+
+www/bower_components
+www/src
