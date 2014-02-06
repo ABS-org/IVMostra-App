@@ -4,6 +4,15 @@
 
 > Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.
 
+
+| **Devices Suportados** | **Potrait**   | **Landscape**  |
+| ---------------------- |:-------------:| --------------:|
+| iPhone 5C              | 320 x 548     | 568 x 300      |
+| iPhone 4               | --- x ---     | --- x ---      |
+| Galaxy SIII            | --- x ---     | --- x ---      |
+
+
+
 ## Iniciando
 
 1. Instale os pacotes do ```node```
