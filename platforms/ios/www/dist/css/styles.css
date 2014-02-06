@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300);
+@import "fonts/Roboto-Light.css";
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,46 @@
   -webkit-tap-highlight-color: transparent;
   /* For some Androids */
   -webkit-user-select: none;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  font-family: "Roboto Light", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #47515e;
+  background: url(../../dist/img/bg-pattern.png);
+}
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+a {
+  color: #33b5e5;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #178ab4;
+  text-decoration: underline;
+}
+img {
+  vertical-align: middle;
+}
+.img-circle {
+  border-radius: 50%;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #e9ebee;
 }
 /* MENU TRANSITIONS */
 menu {
@@ -57,40 +97,33 @@ body {
 header#header-app {
   width: 100%;
   height: 100px;
-  background: #eee;
   text-align: center;
   position: absolute;
   top: 0;
 }
-.bar_colors {
+.bar-colors-top {
   height: 4px;
+  background: #68768a;
 }
-.bar_colors .bar-blue {
-  float: left;
-  width: 25%;
+.bar-colors-top .bar-default {
+  width: 60%;
+}
+.bar-colors-top .bar-color {
+  width: 10%;
+  height: 100%;
   display: block;
-  height: 4px;
+  float: right;
+}
+.bar-colors-top .bar-blue {
   background: #4795d7;
 }
-.bar_colors .bar-green {
-  float: left;
-  width: 25%;
-  display: block;
-  height: 4px;
+.bar-colors-top .bar-green {
   background: #a4ce3a;
 }
-.bar_colors .bar-orange {
-  float: left;
-  width: 25%;
-  display: block;
-  height: 4px;
+.bar-colors-top .bar-orange {
   background: #f69522;
 }
-.bar_colors .bar-red {
-  float: left;
-  width: 25%;
-  display: block;
-  height: 4px;
+.bar-colors-top .bar-red {
   background: #ed2228;
 }
 /* BOX LOAD PAGES */

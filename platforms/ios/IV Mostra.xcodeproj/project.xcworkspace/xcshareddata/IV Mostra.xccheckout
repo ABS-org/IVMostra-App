@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3F0B7EDF-F04D-4A8D-BEF7-2A3F3059029D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IV Mostra</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5EB1F5B8-0DF2-4FD2-AAE9-50BC613E5F9F</key>
+		<string>ssh://github.com/danielfeelfine/ivmostra-app.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/IV Mostra.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5EB1F5B8-0DF2-4FD2-AAE9-50BC613E5F9F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/danielfeelfine/ivmostra-app.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>5EB1F5B8-0DF2-4FD2-AAE9-50BC613E5F9F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5EB1F5B8-0DF2-4FD2-AAE9-50BC613E5F9F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ivmostra-app</string>
+		</dict>
+	</array>
+</dict>
+</plist>
