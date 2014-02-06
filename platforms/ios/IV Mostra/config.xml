@@ -4,7 +4,6 @@
     <description>
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
-    <access origin="*" />
     <content src="index.html" />
     <preference name="AllowInlineMediaPlayback" value="false" />
     <preference name="BackupWebStorage" value="cloud" />
@@ -25,6 +24,7 @@
     <description>
         Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.
     </description>
+    <access origin="http://127.0.0.1*" />
     <name>IV Mostra</name>
     <description>
         Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.
@@ -72,5 +72,5 @@
     <gap:splash gap:platform="ios" height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
-    <access origin="http://127.0.0.1*" />
+    <access origin="*" />
 </widget>
