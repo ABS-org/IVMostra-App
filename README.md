@@ -11,6 +11,7 @@
 | iPhone 4               | --- x ---     | --- x ---      |
 | Galaxy SIII            | --- x ---     | --- x ---      |
 
+*Check [here](http://viewportsizes.com/mine/) your device viewport size and add it!*
 
 
 ## Iniciando
