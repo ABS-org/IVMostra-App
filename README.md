@@ -6,10 +6,15 @@ IV Mostra
 
 ## Iniciando
 
-Instale os pacotes do ```node``` e depois rode o [Grunt](http://gruntjs.com/):
+1. Instale os pacotes do ```node```
+2. Instale as dependências do ```bower```
+3. Compile as sources com o [Grunt](http://gruntjs.com/):
+4. (opcional) Rode o comando ```grunt``` para observar as mudanças nas sources (com Livereload).
 
 ```
-$ npm install && grunt
+$ npm install
+$ bower install
+$ grunt dist-stylesheets && grunt dist-javascripts
 ```
 
 
