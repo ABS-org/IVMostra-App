@@ -2,16 +2,6 @@
 // Scaffolding
 // --------------------------------------------------
 
-
-// Reset the box-sizing
-
-*,
-*:before,
-*:after {
-  .box-sizing(border-box);
-}
-
-
 // Body reset
 
 html {
@@ -20,7 +10,7 @@ html {
 }
 
 body {
-  font-family: @font-family-base;
+  font-family: @font-family-sans-serif;
   font-size: @font-size-base;
   line-height: @line-height-base;
   color: @text-color;
@@ -48,10 +38,6 @@ a {
   &:focus {
     color: @link-hover-color;
     text-decoration: underline;
-  }
-
-  &:focus {
-    .tab-focus();
   }
 }
 
