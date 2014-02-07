@@ -16,16 +16,17 @@
 
 ## Iniciando
 
-1. Instale os pacotes do ```node```
-2. Instale as dependências do ```bower```
-3. Compile as sources com o [Grunt](http://gruntjs.com/):
-4. (opcional) Rode o comando ```grunt``` para observar as mudanças nas sources (com Livereload).
+1. Instale os pacotes do [Node.js](http://nodejs.org/)
+2. Instale as dependências do [Bower](http://bower.io/)
+3. Compile as sources com o [Grunt](http://gruntjs.com/)
 
 ```
 $ npm install
 $ bower install
-$ grunt dist-stylesheets && grunt dist-javascripts
+$ grunt
 ```
+
+*Após qualquer modificação nas sources, é feita compilação automática e refresh com LiveRealod.*
 
 
 ## Como testar
