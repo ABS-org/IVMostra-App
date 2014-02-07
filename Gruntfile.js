@@ -50,7 +50,8 @@ module.exports = function (grunt) {
           'www/src/javascripts/controllers/Page5Controller.js',
 
           // Libraries
-          'www/bower_components/zepto/zepto.min.js',
+          'bower_components/jquery/jquery.min.js',
+          'bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.0.min.js',
           'www/bower_components/fastclick/lib/fastclick.js',
           'www/bower_components/iscroll/build/iscroll.js',
           'www/bower_components/hammerjs/hammer.min.js',
