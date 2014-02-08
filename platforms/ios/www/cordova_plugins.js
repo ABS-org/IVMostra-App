@@ -28,11 +28,5 @@ module.exports = [
             "navigator.geolocation"
         ]
     }
-];
-module.exports.metadata = 
-// TOP OF METADATA
-{
-    "org.apache.cordova.geolocation": "0.3.5"
-}
-// BOTTOM OF METADATA
+]
 });
