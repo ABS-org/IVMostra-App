@@ -14,6 +14,8 @@
     <script src="http://www.rachandotaxi.com.br/js/jquery-ui-maps/min/jquery.ui.map.full.min.js"></script>
     <script src="http://www.rachandotaxi.com.br/js/jquery-ui-maps/jquery.ui.map.extensions.js"></script>
 
+    <script src="cordova.js"></script>
+
     <style>
       .navbar-main-bottom-fixed {
         position: fixed;
@@ -135,8 +137,9 @@
           $('#map_canvas').gmap('addMarker', {'position': '-15.816307,-47.8439705', 'bounds': true}).click(function() {
             $('#map_canvas').gmap('openInfoWindow', {'content': 'Hello World!'}, this);
           });
+          $('#map_canvas').gmap('option', 'zoom', 13);
         });
-        $('#map_canvas').gmap('option', 'zoom', 13);
+        
         $('#map_canvas').gmap('refresh');
       });
 
