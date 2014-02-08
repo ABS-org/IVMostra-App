@@ -5,14 +5,14 @@
     <meta name="format-detection" content="telephone=no" />
     <title>IV Mostra</title>
     
+     <script src="cordova.js"></script>
     <link href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
     
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
-    <script src="http://www.rachandotaxi.com.br/js/jquery-ui-maps/min/jquery.ui.map.full.min.js"></script>
-    <script src="http://www.rachandotaxi.com.br/js/jquery-ui-maps/jquery.ui.map.extensions.js"></script>
+    <script src="js/jquery.ui.map.full.min.js"></script>
 
     <script src="cordova.js"></script>
 
@@ -82,11 +82,12 @@
         <h2>Maps</h2>
 
         <p>Mapas aqui...</p>
+        <button onclick="irParaLocal()">Chegar ao Evento</button>
         <div id="map_canvas"></div>
 
         <p id="geolocation">Finding geolocation...</p>
 
-        <button onclick="irParaLocal()">Chegar ao Evento</button>
+        
         <div id="panel"></div> 
       </div>
       <!-- # content -->
@@ -139,7 +140,6 @@
           });
           $('#map_canvas').gmap('option', 'zoom', 13);
         });
-        
         $('#map_canvas').gmap('refresh');
       });
 
@@ -162,7 +162,8 @@
        * Pega o sua direção e localiza com o evento
        **/               
       function irParaLocal(){
-        var posicao_atual = ""+ position.coords.latitude  + "," + position.coords.longitude+"" ;
+
+        var posicao_atual = [minha_posicao.coords.latitude , minha_posicao.coords.longitude].toString();
         alert(posicao_atual);
         $('#map_canvas').gmap('destroy');
         $('#map_canvas').gmap().bind('init', function(evt, map) { 
