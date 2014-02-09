@@ -41,6 +41,8 @@ para Android:
 
 ```phonegap build android```
 
+#### QR Code
+![alt text](https://raw.github.com/danielfeelfine/ivmostra-app/master/QRCode.png "QR Code")
 
 
 ## Copyright
