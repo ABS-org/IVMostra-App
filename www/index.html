@@ -193,7 +193,7 @@
         <h2>Social</h2>
 
         <h4>Social IV Mostra</h4>
-        <p><button onclick="btFB()">Compartilhe no Facebook</button></p>
+        <p><button onClick="postFace(facebook)">Compartilhe no Facebook</button></p>
         <p>Siga-nos nas redes sociais (Twitter)</p>
 
 
@@ -234,6 +234,22 @@
           $("#AccessToken").val(id);
 
         },1000);
+
+        function postFace(face) {
+
+          alert('ok')
+          var a = {message: 'Teste',
+          link: 'http://cachina.com.br',
+          picture: 'http://www.saites.com.br/img/logo_saites.png',
+          name: 'TESTE',
+          caption: 'cachina.com.br',
+          description: 'TESTE'};
+
+          face.onFacebookPostFeed(a);
+
+        }
+
+
 
     </script>
 
