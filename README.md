@@ -11,6 +11,8 @@
 | iPhone 4               | 320 x 372     | 480 x 320      |
 | Galaxy SIII            | --- x ---     | --- x ---      |
 | Nexus 4                | 384 x 519     | 598 x 311      |
+| Galaxy S1              | 320 x 452     | 533 x 239      |
+| Alcatel One Touch      | 320 x 365     | 480 x 223      |
 
 *Check [here](http://viewportsizes.com/mine/) your device viewport size and add it!*
 
