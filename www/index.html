@@ -23,14 +23,24 @@
     
 
     <style>
+      /* Menu: Navbar botom fixed */
       .navbar-main-bottom-fixed {
         position: fixed;
         bottom: 0;
       }
 
+      /* Map Canvas */
       #map_canvas {
         width: 100%;
-        height: 270px;
+        height: 340px;
+      }
+
+      /* Popups */
+      #popupMapRoute,
+      #popupMapArea-X,
+      #popupMapArea-Y,
+      #popupMapArea-Z {
+        width: 255px;
       }
     </style>
   </head>
@@ -90,14 +100,76 @@
       <div role="main" class="ui-content">
         <h2>Maps</h2>
 
-        <p>Mapas aqui...</p>
-        <button onclick="localizacao()">Chegar ao Evento</button>
-        <div id="map_canvas"></div>
+        <small>Saiba como chegar no evento e como localizar cada área temática.</small>
+        <br><br>
 
-        <p id="geolocation">Finding geolocation...</p>
+        <a href="#popupMapArea-X"
+          data-rel="popup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+          Área X
+        </a>
 
-        
-        <div id="panel"></div> 
+        <!-- Popup: Área X -->
+        <div data-role="popup" id="popupMapArea-X" class="ui-content">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <p>
+            Área X
+          </p>
+        </div>
+        <!-- # Popup: Área X -->
+
+        <a href="#popupMapArea-Y"
+          data-rel="popup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+          Área Y
+        </a>
+
+        <!-- Popup: Área Y -->
+        <div data-role="popup" id="popupMapArea-Y" class="ui-content">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <p>
+            Área Y
+          </p>
+        </div>
+        <!-- # Popup: Área Y -->
+
+        <a href="#popupMapArea-Z"
+          data-rel="popup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+          Área Z
+        </a>
+
+        <!-- Popup: Área Z -->
+        <div data-role="popup" id="popupMapArea-Z" class="ui-content">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <p>
+            Área Z
+          </p>
+        </div>
+        <!-- # Popup: Área Z -->
+
+        <a href="#popupMapRoute"
+          data-rel="popup"
+          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
+          Como chegar?
+        </a>
+
+        <!-- Popup: Como chegar? -->
+        <div data-role="popup" id="popupMapRoute" class="ui-content">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+          <p>
+            <div id="map_canvas"></div>
+
+            <p id="geolocation">Finding geolocation...</p>
+
+            <button onclick="localizacao()">Chegar ao Evento</button>
+            <div id="panel"></div>
+          </p>
+        </div>
+        <!-- # Popup: Como chegar? -->
+
+
+         
       </div>
       <!-- # content -->
 
