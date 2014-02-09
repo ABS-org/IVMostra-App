@@ -5,19 +5,20 @@
     <meta name="format-detection" content="telephone=no" />
     <title>IV Mostra</title>
     
+    <script src="cordova.js"></script>
+    
     <link href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
     
-    <script src="cordova.js"></script>
+    <script type="text/javascript" src="js/oauth.js"></script>
+    <script type="text/javascript" src="js/phonegap.facebook.inappbrowser.js"></script>
 
     <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
     <script src="js/jquery.ui.map.full.min.js"></script>
     <script src="js/jquery.ui.map.overlays.js"></script>
     <script src="js/jquery.ui.map.extensions.js"></script>
-    <script src="js/mapa.js"></script>
-    <script src="js/camera.js"></script>
 
     
 
@@ -41,6 +42,9 @@
         <h2>IV Mostra</h2>
 
         <p>Conteúdo Apresentação IV Mostra</p>
+        <button id="facebook_login" onClick="facebook.onFacebookLogin();">Facebook Login</button>
+        <input id="AccessToken" type="text" value="" />
+        
       </div>
       <!-- # content -->
 
@@ -117,7 +121,7 @@
         <h2>Social</h2>
 
         <h4>Social IV Mostra</h4>
-        <p>Compartilhe no Facebook</p>
+        <p><button onclick="btFB()">Compartilhe no Facebook</button></p>
         <p>Siga-nos nas redes sociais (Twitter)</p>
 
 
@@ -149,6 +153,18 @@
     <!-- Javascript Utils -->
     <script type="text/javascript" src="js/mapa.js"></script>
     <script type="text/javascript" src="js/camera.js"></script>
-    <!-- END: Javascript Utils
+
+    <script type="text/javascript">
+        //APENAS TESTE PARA MOSTRAR QUE O TOKEN
+        setInterval(function(){
+
+          var id = window.localStorage.getItem('facebook_accessToken');
+          $("#AccessToken").val(id);
+
+        },1000);
+
+    </script>
+
+    <!-- END: Javascript Utils -->
   </body>
 </html>

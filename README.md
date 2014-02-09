@@ -35,9 +35,10 @@ $ grunt
 
 
 Adicione os plugins
+
 ```cordova plugin add org.apache.cordova.geolocation```
 ```cordova plugin add org.apache.cordova.camera```
-
+```cordova plugin add org.apache.cordova.inappbrowser```
 
 Exemplo de build para iOS:
 
