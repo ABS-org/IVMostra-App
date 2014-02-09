@@ -33,6 +33,12 @@ $ grunt
 
 É possível renderizar o App direto no browser. Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada.
 
+
+Adicione os plugins
+```cordova plugin add org.apache.cordova.geolocation```
+```cordova plugin add org.apache.cordova.camera```
+
+
 Exemplo de build para iOS:
 
 ```phonegap build ios```
