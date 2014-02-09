@@ -31,13 +31,19 @@ $ grunt
 
 ## Como testar
 
-É possível renderizar o App direto no browser. Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada.
+É possível renderizar o App direto no browser, executando o ```www/index.html```
+Para testar no device, é preciso antes fazer o ```build``` para a plataforma desejada.
 
 
-Adicione os plugins
+Adicione os plugins:
 
+[Geolocation](https://cordova.apache.org/docs/en/3.0.0/cordova_geolocation_geolocation.md.html)
 ```cordova plugin add org.apache.cordova.geolocation```
+
+[Camera](https://cordova.apache.org/docs/en/3.0.0/cordova_camera_camera.md.html)
 ```cordova plugin add org.apache.cordova.camera```
+
+[InAppBrowser](http://cordova.apache.org/docs/en/3.0.0/cordova_inappbrowser_inappbrowser.md.html)
 ```cordova plugin add org.apache.cordova.inappbrowser```
 
 Exemplo de build para iOS:
