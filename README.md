@@ -8,8 +8,9 @@
 | **Devices Suportados** | **Potrait**   | **Landscape**  |
 | ---------------------- |:-------------:| --------------:|
 | iPhone 5C              | 320 x 548     | 568 x 300      |
-| iPhone 4               | --- x ---     | --- x ---      |
+| iPhone 4               | 320 x 372     | 480 x 320      |
 | Galaxy SIII            | --- x ---     | --- x ---      |
+| Nexus 4                | 384 x 519     | 598 x 311      |
 
 *Check [here](http://viewportsizes.com/mine/) your device viewport size and add it!*
 
