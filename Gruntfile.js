@@ -38,32 +38,17 @@ module.exports = function (grunt) {
      ************************************/
     concat: {
       javascripts: {
-        src: [
-          // Controllers
-          'www/src/javascripts/controllers/AppController.js',
-          'www/src/javascripts/controllers/HomeController.js',
-          'www/src/javascripts/controllers/AboutController.js',
-          'www/src/javascripts/controllers/Page1Controller.js',
-          'www/src/javascripts/controllers/Page2Controller.js',
-          'www/src/javascripts/controllers/Page3Controller.js',
-          'www/src/javascripts/controllers/Page4Controller.js',
-          'www/src/javascripts/controllers/Page5Controller.js',
+        files: {
+          'dist/main.js': [
+            // Libraries
+            'bower_components/jquery/jquery.min.js',
+            'bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.0.min.js',
 
-          // Libraries
-          'bower_components/jquery/jquery.min.js',
-          'bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.0.min.js',
-          'www/bower_components/fastclick/lib/fastclick.js',
-          'www/bower_components/iscroll/build/iscroll.js',
-          'www/bower_components/hammerjs/hammer.min.js',
-
-          // App
-          'www/src/javascripts/IVMostra.js',
-          'www/src/javascripts/History.js',
-          'www/src/javascripts/Navigator.js',
-          'www/src/javascripts/Transition.js',
-          'www/src/javascripts/PageLoad.js'
-        ],
-        dest: 'www/dist/js/main.js'
+            // App
+            'src/javascripts/oauth.js',
+            'src/javascripts/phonegap.facebook.inappbrowser.js'
+          ]
+        },
       }
     },
 
