@@ -39,14 +39,14 @@ module.exports = function (grunt) {
     concat: {
       javascripts: {
         files: {
-          'dist/main.js': [
+          'www/dist/js/main.js': [
             // Libraries
             'bower_components/jquery/jquery.min.js',
             'bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.0.min.js',
 
             // App
-            'src/javascripts/oauth.js',
-            'src/javascripts/phonegap.facebook.inappbrowser.js'
+            'www/src/javascripts/oauth.js',
+            'www/src/javascripts/phonegap.facebook.inappbrowser.js'
           ]
         },
       }
