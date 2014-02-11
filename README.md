@@ -5,12 +5,12 @@
 > Aplicativo Mobile da 4º edição da Mostra de Atenção Básica à Saúde.
 
 
-| **Devices**            | **Inches**    | **Resolution**  | **PPI** |
-| ---------------------- |:-------------:| ---------------:|--------:|
-| iPhone 5               | 4             | 640 x 1136      | 326     |
-| iPhone 4               | 3.5           | 640 x 960       | 326     |
-| Galaxy SIII            | 4.8           | 720 x 1280      | 306     |
-| LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 
+| **Devices**            | **Inches**    | **Resolution**  | **PPI** | **Ok?** |
+| ---------------------- |:-------------:| ---------------:|--------:|--------:|
+| iPhone 5               | 4             | 640 x 1136      | 326     | X       |
+| iPhone 4               | 3.5           | 640 x 960       | 326     | X       |
+| Galaxy SIII            | 4.8           | 720 x 1280      | 306     | X       |
+| LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | X       |
 
 *Check [here](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) your device viewport size and add it!*
 
