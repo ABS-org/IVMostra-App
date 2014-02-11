@@ -18,11 +18,11 @@ header {
 .navbar-main-bottom-fixed {
   position: fixed;
   bottom: 0;
+  border-top: 2px solid lighten(@gray, 30%);
   .ui-btn {
   	background: @gray-light;
   	width: 60px;
   	height: 50px;
-  	border-top: 1px solid lighten(@gray, 30%);
   }
   .btn-purple-active {
   	background: @purple;
@@ -235,4 +235,52 @@ menu {
 .button-menu span.text {
 	float: left;
 	margin: 6px 0 0 9px;
+}
+
+
+
+.arrow {
+	position: relative;
+	&:after,
+	&:before {
+		bottom: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	&:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-width: 10px;
+		margin-left: -10px;
+	}
+	&:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-bottom-color: lighten(@gray, 30%);
+		border-width: 13px;
+		margin-left: -13px;
+	}
+}
+.arrow-purple {
+	&:after {
+	border-bottom-color: @purple;
+	}
+}
+.arrow-green {
+	&:after {
+	border-bottom-color: @green;
+	}
+}
+.arrow-red {
+	&:after {
+	border-bottom-color: @red;
+	}
+}
+.arrow-blue {
+	&:after {
+	border-bottom-color: @blue;
+	}
 }
