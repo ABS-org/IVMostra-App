@@ -914,27 +914,27 @@ button.ui-btn-icon-notext,
   box-sizing: border-box;
 }
 .ui-page-pre-in {
-  opacity: 0;
+  opacity: 1;
 }
 .in {
   -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 350ms;
+  -webkit-animation-duration: 10ms;
   -moz-animation-timing-function: ease-out;
-  -moz-animation-duration: 350ms;
+  -moz-animation-duration: 10ms;
   animation-timing-function: ease-out;
-  animation-duration: 350ms;
+  animation-duration: 10ms;
 }
 .out {
   -webkit-animation-timing-function: ease-in;
-  -webkit-animation-duration: 225ms;
+  -webkit-animation-duration: 10ms;
   -moz-animation-timing-function: ease-in;
-  -moz-animation-duration: 225ms;
+  -moz-animation-duration: 10ms;
   animation-timing-function: ease-in;
-  animation-duration: 225ms;
+  animation-duration: 10ms;
 }
 @-webkit-keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -942,7 +942,7 @@ button.ui-btn-icon-notext,
 }
 @-moz-keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -950,7 +950,7 @@ button.ui-btn-icon-notext,
 }
 @keyframes fadein {
   from {
-    opacity: 0;
+    opacity: 1;
   }
   to {
     opacity: 1;
@@ -961,7 +961,7 @@ button.ui-btn-icon-notext,
     opacity: 1;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @-moz-keyframes fadeout {
@@ -969,7 +969,7 @@ button.ui-btn-icon-notext,
     opacity: 1;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 @keyframes fadeout {
@@ -977,25 +977,25 @@ button.ui-btn-icon-notext,
     opacity: 1;
   }
   to {
-    opacity: 0;
+    opacity: 1;
   }
 }
 .fade.out {
-  opacity: 0;
-  -webkit-animation-duration: 125ms;
+  opacity: 1;
+  -webkit-animation-duration: 10ms;
   -webkit-animation-name: fadeout;
-  -moz-animation-duration: 125ms;
+  -moz-animation-duration: 10ms;
   -moz-animation-name: fadeout;
-  animation-duration: 125ms;
+  animation-duration: 10ms;
   animation-name: fadeout;
 }
 .fade.in {
   opacity: 1;
-  -webkit-animation-duration: 225ms;
+  -webkit-animation-duration: 10ms;
   -webkit-animation-name: fadein;
-  -moz-animation-duration: 225ms;
+  -moz-animation-duration: 10ms;
   -moz-animation-name: fadein;
-  animation-duration: 225ms;
+  animation-duration: 10ms;
   animation-name: fadein;
 }
 .pop {
@@ -1823,7 +1823,7 @@ button.ui-btn-icon-notext,
     -webkit-transform: translateX(0) scale(0.7);
   }
   100% {
-    -webkit-transform: translateX(-99.99999999%) scale(0.7);
+    -webkit-transform: translateX(-100%) scale(0.7);
   }
 }
 @-moz-keyframes flowouttoleft {
@@ -1835,7 +1835,7 @@ button.ui-btn-icon-notext,
     -moz-transform: translateX(0) scale(0.7);
   }
   100% {
-    -moz-transform: translateX(-100%) scale(0.7);
+    -moz-transform: translateX(-99.99999999%) scale(0.7);
   }
 }
 @keyframes flowouttoleft {
@@ -4341,12 +4341,12 @@ header#header-app {
 .navbar-main-bottom-fixed {
   position: fixed;
   bottom: 0;
+  border-top: 2px solid #bdc4ce;
 }
 .navbar-main-bottom-fixed .ui-btn {
   background: #ccd1d9;
   width: 60px;
   height: 50px;
-  border-top: 1px solid #bdc4ce;
 }
 .navbar-main-bottom-fixed .btn-purple-active {
   background: #8255aa;
@@ -4369,6 +4369,11 @@ header#header-app {
 }
 .ui-content .page-title small {
   font-size: 0.65em;
+}
+.ui-content .page-title .tiny {
+  font-size: 0.42em;
+  position: relative;
+  top: 4px;
 }
 .ui-content .paragraph {
   padding: 15px;
@@ -4542,4 +4547,41 @@ menu {
 .button-menu span.text {
   float: left;
   margin: 6px 0 0 9px;
+}
+.arrow {
+  position: relative;
+}
+.arrow:after,
+.arrow:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 10px;
+  margin-left: -10px;
+}
+.arrow:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-bottom-color: #bdc4ce;
+  border-width: 13px;
+  margin-left: -13px;
+}
+.arrow-purple:after {
+  border-bottom-color: #8255aa;
+}
+.arrow-green:after {
+  border-bottom-color: #a3cd3a;
+}
+.arrow-red:after {
+  border-bottom-color: #ec252a;
+}
+.arrow-blue:after {
+  border-bottom-color: #4795d7;
 }
