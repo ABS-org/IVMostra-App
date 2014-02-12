@@ -18,7 +18,6 @@ header {
 .navbar-main-bottom-fixed {
   position: fixed;
   bottom: 0;
-  border-top: 2px solid lighten(@gray, 30%);
   .ui-btn {
   	background: @gray-light;
   	width: 60px;
@@ -259,28 +258,31 @@ menu {
 	}
 	&:before {
 		border-color: rgba(194, 225, 245, 0);
-		border-bottom-color: lighten(@gray, 30%);
 		border-width: 13px;
 		margin-left: -13px;
 	}
 }
 .arrow-purple {
-	&:after {
+	&:after,
+	&:before {
 	border-bottom-color: @purple;
 	}
 }
 .arrow-green {
-	&:after {
+	&:after,
+	&:before {
 	border-bottom-color: @green;
 	}
 }
 .arrow-red {
-	&:after {
+	&:after,
+	&:before {
 	border-bottom-color: @red;
 	}
 }
 .arrow-blue {
-	&:after {
+	&:after,
+	&:before {
 	border-bottom-color: @blue;
 	}
 }
