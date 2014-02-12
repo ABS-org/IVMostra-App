@@ -58,6 +58,7 @@ para Android:
 #### QR Code
 ![alt text](https://raw.github.com/danielfeelfine/ivmostra-app/master/QRCode.png "QR Code")
 
+gerado em: [Phonegap Build](https://build.phonegap.com/apps/765810/builds)
 
 ## Copyright
 
