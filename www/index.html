@@ -137,71 +137,14 @@
           <small class="tiny">Orientação sobre localização.</small>
         </h2>
 
-        <br><br>
+        <button class="btn-route" onclick="localizacao()">
+          Como chegar ao Evento?
+        </button>
 
-        <a href="#popupMapArea-X"
-          data-rel="popup"
-          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-          Área X
-        </a>
+        <div id="map_canvas"></div>
 
-        <!-- Popup: Área X -->
-        <div data-role="popup" id="popupMapArea-X" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>
-            Área X
-          </p>
-        </div>
-        <!-- # Popup: Área X -->
+        <div id="panel"></div>
 
-        <a href="#popupMapArea-Y"
-          data-rel="popup"
-          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-          Área Y
-        </a>
-
-        <!-- Popup: Área Y -->
-        <div data-role="popup" id="popupMapArea-Y" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>
-            Área Y
-          </p>
-        </div>
-        <!-- # Popup: Área Y -->
-
-        <a href="#popupMapArea-Z"
-          data-rel="popup"
-          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-          Área Z
-        </a>
-
-        <!-- Popup: Área Z -->
-        <div data-role="popup" id="popupMapArea-Z" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>
-            Área Z
-          </p>
-        </div>
-        <!-- # Popup: Área Z -->
-
-        <a href="#popupMapRoute"
-          data-rel="popup"
-          class="ui-btn ui-corner-all ui-shadow ui-btn-inline">
-          Como chegar?
-        </a>
-
-        <!-- Popup: Como chegar? -->
-        <div data-role="popup" id="popupMapRoute" class="ui-content">
-          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
-          <p>
-            <div id="map_canvas"></div>
-
-            <p id="geolocation">Finding geolocation...</p>
-
-            <button onclick="localizacao()">Chegar ao Evento</button>
-            <div id="panel"></div>
-          </p>
-        </div>
         <!-- # Popup: Como chegar? -->   
       </div>
       <!-- # content -->
