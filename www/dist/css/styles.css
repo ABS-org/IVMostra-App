@@ -5675,6 +5675,11 @@ header#header-app {
   top: 0;
 }
 .btn-route {
+  background: #4795d7 !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px #216197 !important;
+  width: 300px!important;
+  margin-left: 10px;
   background: #ccd1d9;
   border: none;
   border-radius: 0;
@@ -5696,8 +5701,8 @@ header#header-app {
 .navbar-main-bottom-fixed .btn-green-active {
   background: #a3cd3a;
 }
-.navbar-main-bottom-fixed .btn-red-active {
-  background: #ec252a;
+.navbar-main-bottom-fixed .btn-orange-active {
+  background: #f69522;
 }
 .navbar-main-bottom-fixed .btn-blue-active {
   background: #4795d7;
@@ -5724,7 +5729,8 @@ header#header-app {
 /* Map Canvas */
 #map_canvas {
   width: 100%;
-  height: 370px;
+  height: 342px;
+  margin-top: 10px;
 }
 /* Popups */
 #popupMapRoute,
@@ -5922,9 +5928,9 @@ menu {
 .arrow-green:before {
   border-bottom-color: #a3cd3a;
 }
-.arrow-red:after,
-.arrow-red:before {
-  border-bottom-color: #ec252a;
+.arrow-orange:after,
+.arrow-orange:before {
+  border-bottom-color: #f69522;
 }
 .arrow-blue:after,
 .arrow-blue:before {
