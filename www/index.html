@@ -193,15 +193,32 @@
           <small class="tiny">Tire sua foto e compartilhe na IV Mostra!</small>
         </h2>
 
-        <button id="facebook_login" onClick="facebook.onFacebookLogin();">Facebook Login</button>
+        <ul class="list-step-social">
+          <li class="step-social login">
+            <p>1º Faça o login no Facebook</p>
+            <button id="facebook_login" onClick="facebook.onFacebookLogin();">Facebook Login</button>
+          </li>
 
-        <button onclick="capturePhotoEdit();">CAMERA</button>
+          <li class="step-social camera-snap">
+            <p>2º Tire sua foto</p>
+            <button onclick="capturePhotoEdit();">CAMERA</button>
+          </li>
 
-        <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Photo Library</button>
+          <li class="step-social camera-role">
+            <p>OU Escolha uma imagem do seu celular</p>
+            <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Library</button>
+          </li>
 
-        <button onClick="postFace(facebook)">Compartilhe no Facebook</button>
+          <li class="step-social photo">
+            <p>Foto a ser compartilhada</p>
+            <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+          </li>
 
-        <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+          <li class="step-social share">
+            <p>3º Compartilhe sua Foto!</p>
+            <button onClick="postFace(facebook)">Compartilhe no Facebook</button>
+          </li>
+        </ul>
 
       </div>
       <!-- # content -->
