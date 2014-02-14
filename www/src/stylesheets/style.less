@@ -15,6 +15,11 @@ header {
 }
 
 .btn-route {
+	background: @blue!important;
+	color: @white!important;
+	text-shadow: 1px 1px 1px darken(@blue, 20%)!important;
+	width: 300px!important;
+	margin-left: 10px;
 	background: @gray-light;
 	border: none;
 	border-radius: 0;
@@ -35,8 +40,8 @@ header {
   .btn-green-active {
   	background: @green;
   }
-  .btn-red-active {
-  	background: @red;
+  .btn-orange-active {
+  	background: @orange;
   }
   .btn-blue-active {
   	background: @blue;
@@ -67,7 +72,8 @@ header {
 /* Map Canvas */
 #map_canvas {
   width: 100%;
-  height: 370px;
+  height: 342px;
+  margin-top: 10px;
 }
 
 /* Popups */
@@ -280,10 +286,10 @@ menu {
 	border-bottom-color: @green;
 	}
 }
-.arrow-red {
+.arrow-orange {
 	&:after,
 	&:before {
-	border-bottom-color: @red;
+	border-bottom-color: @orange;
 	}
 }
 .arrow-blue {
