@@ -12,7 +12,7 @@
 | Galaxy SIII            | 4.8           | 720 x 1280      | 306     | X       |
 | LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | X       |
 
-*Check [here](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) your device viewport size and add it!*
+*Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) o tamanho de tela do seu device e adicione-o!*
 
 
 ## Iniciando
