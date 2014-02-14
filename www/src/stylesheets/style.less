@@ -262,18 +262,19 @@ menu {
 .list-step-social {
 	.separator {
 		width: 8px;
-		height: 20px;
+		height: 18px;
 		margin-left: 51%;
+		margin-top: -4px;
 		background: @gray-light;
 	}
 	.step-social {
-		height: 80px;
+		height: 82px;
 		width: 60%;
 		margin-left: 5%;
 		display: block;
 		p {
 			color: @gray;
-			width: 80px;
+			width: 70px;
 			float: left;
 			font-size: 0.9em;
 			line-height: 1em;
@@ -288,6 +289,7 @@ menu {
 			margin: 0!important;
 			border-radius: 50%!important;
 			float: right;
+			box-shadow: none!important;
 		}
 	}
 	.login {
@@ -308,6 +310,24 @@ menu {
 			&:hover {
 				color: @white;
 				text-shadow: 1px 1px 1px darken(@green, 20%);
+			}
+		}
+	}
+	.photo {
+		button {
+			width: 90px;
+			height: 90px;
+			margin-right: -4px!important;
+			margin-top: -20px;
+			border: 2px solid @gray-light;
+			border-radius: 5px!important;
+			padding: 0!important;
+			background: @gray-lighter;
+			.img-share {
+				width: 90px;
+				height: 90px;
+				margin: 0!important;
+				border-radius: 5px;
 			}
 		}
 	}
