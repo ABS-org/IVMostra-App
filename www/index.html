@@ -196,27 +196,32 @@
         <ul class="list-step-social">
           <li class="step-social login">
             <p>1º Faça o login no Facebook</p>
-            <button id="facebook_login" onClick="facebook.onFacebookLogin();">Facebook Login</button>
+            <button id="facebook_login" onClick="facebook.onFacebookLogin();">
+              <i class="fa fa-facebook fa-3x"></i>
+              <br>Login
+            </button>
           </li>
-
+          <li class="separator"></li>
           <li class="step-social camera-snap">
             <p>2º Tire sua foto</p>
-            <button onclick="capturePhotoEdit();">CAMERA</button>
+            <button onclick="capturePhotoEdit();">
+              <i class="fa fa-camera fa-2x"></i>
+            </button>
           </li>
-
-          <li class="step-social camera-role">
-            <p>OU Escolha uma imagem do seu celular</p>
-            <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">Library</button>
-          </li>
-
+          <li class="separator"></li>
           <li class="step-social photo">
             <p>Foto a ser compartilhada</p>
-            <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+            <button>
+              <img class="img-share" style="display:none;" id="smallImage" src="" />
+            </button>
           </li>
-
+          <li class="separator"></li>
           <li class="step-social share">
             <p>3º Compartilhe sua Foto!</p>
-            <button onClick="postFace(facebook)">Compartilhe no Facebook</button>
+            <button onClick="postFace(facebook)">
+              <i class="fa fa-share-square-o fa-2x"></i>
+              <br>Enviar
+            </button>
           </li>
         </ul>
 
