@@ -393,3 +393,33 @@ menu {
 	border-bottom-color: @blue;
 	}
 }
+
+.arrow-right {
+	position: relative;
+	background: #88b7d5;
+	border: 1px solid @gray-light;
+	&:after,
+	&:before {
+		left: 100%;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+	&:after {
+		border-color: rgba(136, 183, 213, 0);
+		border-left-color: @gray-lighter;
+		border-width: 6px;
+		margin-top: -6px;
+	}
+	&:before {
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: @gray-light;
+		border-width: 10px;
+		margin-top: -10px;
+	}
+}
+
