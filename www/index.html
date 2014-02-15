@@ -196,7 +196,7 @@
         <ul class="list-step-social">
           <li class="step-social login">
             <p class="arrow-right">Faça o login no Facebook</p>
-            <button id="facebook_login" onClick="facebook.onFacebookLogin();">
+            <button id="facebook_login" onclick="facebook.onFacebookLogin()">
               <i class="fa fa-facebook fa-3x"></i>
               <br>Login
             </button>
@@ -219,10 +219,11 @@
           <li class="separator"></li>
           <li class="step-social share">
             <p class="arrow-right">Compartilhe!</p>
-            <button onClick="postFace(facebook)">
+            <button onClick="postFace(facebook,upload_foto)" class="btnCompartilhar">
               <i class="fa fa-share-square-o fa-2x"></i>
               <br>Enviar
             </button>
+            <img src="img/ajax-loader.png" class="loading-upload" style="display:none"/>
           </li>
         </ul>
 
@@ -273,27 +274,46 @@
 
     <!-- Javascript Utils -->
     <script type="text/javascript">
-        //APENAS TESTE PARA MOSTRAR QUE O TOKEN
-        setInterval(function(){
+        function postFace(face,foto) {
 
-          var id = window.localStorage.getItem('facebook_accessToken');
-          $("#AccessToken").val(id);
-
-        },1000);
-
-        function postFace(face) {
-
-          alert('Compartilhado com Sucesso! ;-)')
-          var a = {message: 'Olá! Estou na IV Mostra Nacional de Experiências em Atenção Básica/Saúde da Família. #IVMostra #MostraSaude',
+          if(!face.isFacebookLogged()){
+            alert("Realize o Login no Facebook");
+            return false;
+          }
+         
+          var photo = foto;
+          
+          var a = {message: 'Olá! Estou na IV Mostra Nacional de Experiências em Atenção Básica/Saúde da Família. #IVMostra #MostraSaúde',
           link: 'http://www.mostrasaude.net/',
-          picture: 'https://raw.github.com/danielfeelfine/ivmostra-app/master/icon.png',
+          picture: foto,
           name: 'IV Mostra',
           caption: 'http://www.mostrasaude.net/',
           description: 'Valorizando a experiência, estimulando o protagonismo local.'};
 
           face.onFacebookPostFeed(a);
+          face.onFacebookLogout();
+          
+          var smallImage = document.getElementById('smallImage');
+          smallImage.src = "data:image/jpeg;base64,";
+
+          alert('Compartilhado com Sucesso! ;-)')
 
         }
+
+
+        $("#social").bind('pageshow', function() {
+
+          window.localStorage.setItem('facebook_accessToken', null);
+          if(facebook.isFacebookLogged()){
+              $('#facebook_login').addClass("logoff");
+              $('#facebook_login').click(facebook.onFacebookLogout);
+
+          }else{ //NAO TIVER LOGADO
+              $('#facebook_login').removeClass("logoff");
+              $('#facebook_login').click(facebook.onFacebookLogin);
+          }
+
+        });
     </script>
     <!-- END: Javascript Utils -->
 
