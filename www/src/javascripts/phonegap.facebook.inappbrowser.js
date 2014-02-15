@@ -32,6 +32,8 @@ var facebook = {
         var access_token = location.url.match(/access_token=(.*)$/)[1].split('&expires_in')[0];
         window.localStorage.setItem('facebook_accessToken', access_token);
         appInBrowser.close();
+        alert('Logado com sucesso!');
+        $('#facebook_login').addClass("logoff");
       }
 
       if (location.url.indexOf("error_reason=user_denied") !== -1) {
@@ -54,6 +56,8 @@ var facebook = {
       else if(location.url === redirectUrl + '#_=_' || location.url === redirectUrl) {
         window.localStorage.setItem('facebook_accessToken', null);
         appInBrowser.close();
+        alert('Deslogado!');
+        $('#facebook_login').removeClass("logoff");
       }
     });
   },
@@ -72,17 +76,28 @@ var facebook = {
 
   //Function get info
   onFacebookGetInfo: function() {
-    if(window.localStorage.getItem('facebook_accessToken') === null) {
+    if(window.localStorage.getItem('facebook_accessToken') === "") {
       return false;
     }
     var url = "https://graph.facebook.com/me?access_token=" + window.localStorage.getItem('facebook_accessToken');
     $.getJSON(url, function(data) {
       window.localStorage.setItem('facebook_uid', data.id);
+      return data.id;
     })
     .error(function() {
       window.localStorage.setItem('facebook_accessToken', null);
       window.localStorage.setItem('facebook_uid', null);
     });
+  },
+
+  //Returns Facebook is logged
+  isFacebookLogged: function() {
+    if(window.localStorage.getItem('facebook_accessToken') === "null" ||window.localStorage.getItem('facebook_accessToken') === "") {
+      return false;
+    }else{
+      return true;
+    }
+    
   },
 
   /*
@@ -96,6 +111,7 @@ var facebook = {
   description: 'lorem lipsum'}
   */
   onFacebookPostFeed: function(post) {
+    
     if(window.localStorage.getItem('facebook_accessToken') === null) {
       return false;
     }
@@ -105,5 +121,7 @@ var facebook = {
       window.localStorage.setItem('facebook_accessToken', null);
       window.localStorage.setItem('facebook_uid', null);
     });
+
+   
   }
 };
