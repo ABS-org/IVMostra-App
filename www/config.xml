@@ -49,6 +49,7 @@
     <!-- Plugins -->
     <gap:plugin name="org.apache.cordova.geolocation" />
     <gap:plugin name="org.apache.cordova.inappbrowser" />
+    <gap:plugin name="org.apache.cordova.camera" />
     
     <feature name="InAppBrowser">
         <param name="ios-package" value="CDVInAppBrowser" />
