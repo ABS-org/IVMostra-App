@@ -1628,7 +1628,7 @@ button.ui-btn-icon-notext,
   transform-origin: 0;
 }
 .turn.out {
-  -webkit-transform: rotateY(-89.99999999deg) scale(0.9);
+  -webkit-transform: rotateY(-90deg) scale(0.9);
   -webkit-animation-name: flipouttoleft;
   -webkit-animation-duration: 125ms;
   -moz-transform: rotateY(-90deg) scale(0.9);
@@ -5673,6 +5673,38 @@ header#header-app {
   text-align: center;
   position: absolute;
   top: 0;
+}
+.btn-default {
+  width: 80%;
+  margin-left: 10%;
+  background: #ccd1d9;
+  padding: 18px 0 18px 0;
+  text-align: center;
+  border: 1px solid #bdc4ce !important;
+}
+.btn-blue {
+  background: #4795d7;
+  border: 1px solid #3289d2 !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px #2a7cc1 !important;
+}
+.btn-green {
+  background: #a3cd3a;
+  border: 1px solid #95bd30 !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px #85a92b !important;
+}
+.btn-orange {
+  background: #f69522;
+  border: 1px solid #f5890a !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px #dc7b09 !important;
+}
+.btn-purple {
+  background: #8255aa;
+  border: 1px solid #754d99 !important;
+  color: #ffffff !important;
+  text-shadow: 1px 1px 1px #684488 !important;
 }
 .img-home {
   border-top: 4px solid #a3cd3a;
