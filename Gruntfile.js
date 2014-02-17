@@ -47,6 +47,10 @@ module.exports = function (grunt) {
             // App
             'www/src/javascripts/oauth.js',
             'www/src/javascripts/phonegap.facebook.inappbrowser.js'
+          ],
+          'www/dist/js/utils.js': [
+            // Utils
+            'www/src/javascripts/utils.js'
           ]
         },
       }
