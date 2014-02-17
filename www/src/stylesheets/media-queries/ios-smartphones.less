@@ -1,7 +1,7 @@
 
 @media (max-width: 320px) {
 	// iOS - iPhone 5
-	@media (max-height: 568px) {
+	@media (min-height: 568px) {
 		.ui-content {
 		  .page-title {
 		    margin: 20px 0 20px 15px;
@@ -52,6 +52,76 @@
 		#map_canvas {
 		  height: 330px;
 		  margin-top: 9px;
+		}
+		.list-step-social {
+			.separator {
+				width: 8px;
+				height: 18px;
+				margin-left: 51%;
+				margin-top: -4px;
+			}
+			.step-social {
+				height: 82px;
+				width: 60%;
+				margin-left: 5%;
+				p {
+					width: 70px;
+					font-size: 0.9em;
+					line-height: 1.2em;
+					padding: 6px;
+					border-radius: 6px;
+				}
+				button {
+					width: 80px;
+					height: 80px;
+					margin: 0!important;
+					border-radius: 50%!important;
+				}
+			}
+			.login {
+				button {
+					font-size: 0.9em;
+				}
+				p {
+					margin-top: 9px;
+				}
+			}
+			.camera-snap {
+				button {
+					&:hover { }
+				}
+				p {
+					margin-top: 22px;
+				}
+			}
+			.photo {
+				button {
+					width: 90px;
+					height: 90px;
+					margin-right: -4px!important;
+					margin-top: -20px;
+					border-radius: 5px!important;
+					padding: 0!important;
+					.img-share {
+						width: 90px;
+						height: 90px;
+						margin: 0!important;
+						border-radius: 5px;
+					}
+				}
+				p {
+					margin-top: 12px;
+				}
+			}
+			.share {
+				button {
+					font-size: 0.9em;
+					&:hover { }
+				}
+				p {
+					margin-top: 21px;
+				}
+			}
 		}
 	}
 	
