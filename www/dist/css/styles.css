@@ -5484,7 +5484,7 @@ hr {
     -webkit-transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-100%);
+    -webkit-transform: translateY(-99.99999999%);
   }
 }
 @-moz-keyframes slideouttotop {
@@ -5933,6 +5933,9 @@ hr {
   margin-top: -10px;
 }
 @media (max-width: 320px) and (min-height: 568px) {
+  #prog .ui-content .page-title {
+    margin: 20px 0 50px 15px;
+  }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
     font-size: 2.3em;
