@@ -12,7 +12,7 @@
 | Galaxy SIII            | 4.8           | 720 x 1280      | 306     | 2               |X        |
 | LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 2               |X        |
 
-*Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) o tamanho de tela do seu device e adicione-o!*
+*Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) ou [aqui](http://en.wikipedia.org/wiki/List_of_displays_by_pixel_density) o tamanho de tela do seu device e adicione-o!*
 
 
 ## Iniciando
