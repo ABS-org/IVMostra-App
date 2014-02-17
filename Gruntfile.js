@@ -58,6 +58,23 @@ module.exports = function (grunt) {
     },
 
     /************************************
+     * grunt-contrib-uglify
+     * Minify javascripts
+     ************************************/
+    uglify: {
+      main: {
+        files: {
+          'www/dist/js/main.min.js': ['www/dist/js/main.js']
+        }
+      },
+      utils: {
+        files: {
+          'www/dist/js/utils.min.js': ['www/dist/js/utils.js']
+        }
+      }
+    },
+
+    /************************************
      * grunt-contrib-watch
      * Watch some files and tasks
      ************************************/
@@ -114,7 +131,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-stylesheets', ['less']);
 
   // JS dist task
-  grunt.registerTask('dist-javascripts', ['concat']);
+  grunt.registerTask('dist-javascripts', ['concat', 'uglify']);
 
   // Use grunt-bump for changing version number
   grunt.loadNpmTasks('grunt-bump');
