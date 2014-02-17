@@ -1475,7 +1475,7 @@ button.ui-btn-icon-notext,
   transform: translateX(0);
 }
 .flip.out {
-  -webkit-transform: rotateY(-90deg) scale(0.9);
+  -webkit-transform: rotateY(-89.99999999deg) scale(0.9);
   -webkit-animation-name: flipouttoleft;
   -webkit-animation-duration: 175ms;
   -moz-transform: rotateY(-90deg) scale(0.9);
@@ -1822,7 +1822,7 @@ button.ui-btn-icon-notext,
     -webkit-transform: translateX(0) scale(0.7);
   }
   100% {
-    -webkit-transform: translateX(-99.99999999%) scale(0.7);
+    -webkit-transform: translateX(-100%) scale(0.7);
   }
 }
 @-moz-keyframes flowouttoleft {
@@ -1834,7 +1834,7 @@ button.ui-btn-icon-notext,
     -moz-transform: translateX(0) scale(0.7);
   }
   100% {
-    -moz-transform: translateX(-100%) scale(0.7);
+    -moz-transform: translateX(-99.99999999%) scale(0.7);
   }
 }
 @keyframes flowouttoleft {
@@ -5674,35 +5674,51 @@ header#header-app {
   position: absolute;
   top: 0;
 }
+#home .fa-home {
+  font-size: 3.4em;
+  margin: 2px 5px 0 0;
+}
+#prog .fa-calendar {
+  font-size: 3em;
+  margin: 5px 5px 0 0;
+}
+#map .fa-compass {
+  font-size: 3.5em;
+  margin: 4px 5px 0 0;
+}
+#social .fa-users {
+  font-size: 2.8em;
+  margin: 8px 5px 0 0;
+}
 .btn-default {
   width: 80%;
   margin-left: 10%;
   background: #ccd1d9;
   padding: 18px 0 18px 0;
   text-align: center;
-  border: 1px solid #bdc4ce !important;
+  border: 3px solid #a0aab8 !important;
 }
 .btn-blue {
   background: #4795d7;
-  border: 1px solid #3289d2 !important;
+  border: 3px solid #256eac !important;
   color: #ffffff !important;
   text-shadow: 1px 1px 1px #2a7cc1 !important;
 }
 .btn-green {
   background: #a3cd3a;
-  border: 1px solid #95bd30 !important;
+  border: 3px solid #759526 !important;
   color: #ffffff !important;
   text-shadow: 1px 1px 1px #85a92b !important;
 }
 .btn-orange {
   background: #f69522;
-  border: 1px solid #f5890a !important;
+  border: 3px solid #c46e08 !important;
   color: #ffffff !important;
   text-shadow: 1px 1px 1px #dc7b09 !important;
 }
 .btn-purple {
   background: #8255aa;
-  border: 1px solid #754d99 !important;
+  border: 3px solid #5b3c77 !important;
   color: #ffffff !important;
   text-shadow: 1px 1px 1px #684488 !important;
 }
@@ -5733,15 +5749,31 @@ header#header-app {
 }
 .navbar-main-bottom-fixed .btn-purple-active {
   background: #8255aa;
+  text-shadow: 1px 1px 1px #4e3366;
+}
+.navbar-main-bottom-fixed .btn-purple-active:hover {
+  text-shadow: 1px 1px 1px #4e3366;
 }
 .navbar-main-bottom-fixed .btn-green-active {
   background: #a3cd3a;
+  text-shadow: 1px 1px 1px #658021;
+}
+.navbar-main-bottom-fixed .btn-green-active:hover {
+  text-shadow: 1px 1px 1px #658021;
 }
 .navbar-main-bottom-fixed .btn-orange-active {
   background: #f69522;
+  text-shadow: 1px 1px 1px #ab6007;
+}
+.navbar-main-bottom-fixed .btn-orange-active:hover {
+  text-shadow: 1px 1px 1px #ab6007;
 }
 .navbar-main-bottom-fixed .btn-blue-active {
   background: #4795d7;
+  text-shadow: 1px 1px 1px #216197;
+}
+.navbar-main-bottom-fixed .btn-blue-active:hover {
+  text-shadow: 1px 1px 1px #216197;
 }
 .ui-content .page-title {
   margin: 20px 0 20px 15px;
