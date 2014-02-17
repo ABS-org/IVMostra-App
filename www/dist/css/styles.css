@@ -964,7 +964,7 @@ button.ui-btn-icon-notext,
     -webkit-transform: rotateY(0);
   }
   to {
-    -webkit-transform: rotateY(-90deg) scale(0.9);
+    -webkit-transform: rotateY(-89.99999999deg) scale(0.9);
   }
 }
 @-moz-keyframes flipouttoleft {
