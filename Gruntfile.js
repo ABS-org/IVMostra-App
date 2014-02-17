@@ -50,6 +50,7 @@ module.exports = function (grunt) {
           ],
           'www/dist/js/utils.js': [
             // Utils
+            'www/src/javascripts/camera.js',
             'www/src/javascripts/utils.js'
           ]
         },
