@@ -26,33 +26,6 @@
 		  height: 420px;
 		  margin-top: 9px;
 		}
-	}
-
-	// iOS - iPhone 4
-	@media (max-height: 480px) {
-		.ui-content {
-		  .page-title {
-		    margin: 5px 0 10px 15px;
-		    font-size: 2em;
-		    line-height: 0.65em;
-		    small {
-		      font-size: 0.65em;
-		    }
-		    .tiny {
-		      font-size: 0.42em;
-		      top: 4px;
-		    }
-		  }
-		  .paragraph {
-		    font-size: 1em;
-		    padding: 15px;
-		    line-height: 1.5em;
-		  }
-		}
-		#map_canvas {
-		  height: 330px;
-		  margin-top: 9px;
-		}
 		.list-step-social {
 			.separator {
 				width: 8px;
@@ -105,6 +78,103 @@
 					.img-share {
 						width: 90px;
 						height: 90px;
+						margin: 0!important;
+						border-radius: 5px;
+					}
+				}
+				p {
+					margin-top: 12px;
+				}
+			}
+			.share {
+				button {
+					font-size: 0.9em;
+					&:hover { }
+				}
+				p {
+					margin-top: 21px;
+				}
+			}
+		}
+	}
+
+	// iOS - iPhone 4
+	@media (max-height: 480px) {
+		.ui-content {
+		  .page-title {
+		    margin: 5px 0 10px 15px;
+		    font-size: 2em;
+		    line-height: 0.65em;
+		    small {
+		      font-size: 0.65em;
+		    }
+		    .tiny {
+		      font-size: 0.42em;
+		      top: 4px;
+		    }
+		  }
+		  .paragraph {
+		    font-size: 1em;
+		    padding: 15px;
+		    line-height: 1.5em;
+		  }
+		}
+		#map_canvas {
+		  height: 330px;
+		  margin-top: 9px;
+		}
+		.list-step-social {
+			.separator {
+				width: 8px;
+				height: 18px;
+				margin-left: 53%;
+				margin-top: -12px;
+			}
+			.step-social {
+				height: 82px;
+				width: 60%;
+				margin-left: 5%;
+				p {
+					width: 70px;
+					font-size: 0.9em;
+					line-height: 1em;
+					padding: 6px;
+					border-radius: 6px;
+				}
+				button {
+					width: 70px;
+					height: 70px;
+					margin: 0!important;
+					border-radius: 50%!important;
+				}
+			}
+			.login {
+				button {
+					font-size: 0.8em;
+				}
+				p {
+					margin-top: 9px;
+				}
+			}
+			.camera-snap {
+				button {
+					&:hover { }
+				}
+				p {
+					margin-top: 22px;
+				}
+			}
+			.photo {
+				button {
+					width: 90px;
+					height: 90px;
+					margin-right: -10px!important;
+					margin-top: -24px;
+					border-radius: 5px!important;
+					padding: 0!important;
+					.img-share {
+						width: 80px;
+						height: 80px;
 						margin: 0!important;
 						border-radius: 5px;
 					}
