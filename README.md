@@ -10,8 +10,8 @@
 | iPhone 5               | 4             | 640 x 1136      | 326     | 2               |√        |
 | iPhone 4               | 3.5           | 640 x 960       | 326     | 2               |√        |
 | iPad 2                 | 9.7           | 2048 x 1536     | 326     | 2               |X        |
-| Galaxy SIII            | 4.8           | 720 x 1280      | 306     | 2               |X        |
-| LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 2               |X        |
+| Galaxy SIII            | 4.8           | 720 x 1280      | 306     | 2               |√        |
+| LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 2               |√        |
 
 *Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) ou [aqui](http://en.wikipedia.org/wiki/List_of_displays_by_pixel_density) o tamanho de tela do seu device e adicione-o!*
 
