@@ -5664,7 +5664,7 @@ hr {
     transform: rotateY(0);
   }
   to {
-    transform: rotateY(-89.99999999deg) scale(0.9);
+    transform: rotateY(-90deg) scale(0.9);
   }
 }
 @-webkit-keyframes flipouttoright {
@@ -5742,13 +5742,6 @@ hr {
 /* Map Canvas */
 #map_canvas {
   width: 100%;
-}
-/* Popups */
-#popupMapRoute,
-#popupMapArea-X,
-#popupMapArea-Y,
-#popupMapArea-Z {
-  width: 255px;
 }
 .bar-colors-top {
   height: 4px;
@@ -6130,5 +6123,58 @@ hr {
     padding: 15px;
     margin-top: 15px;
     line-height: 1.8em;
+  }
+  .navbar-main-bottom-fixed {
+    position: fixed;
+    bottom: 0;
+  }
+  .navbar-main-bottom-fixed .ui-btn {
+    width: 170px;
+    height: 100px;
+  }
+  #home .fa-home {
+    font-size: 6em;
+    margin: 13px 5px 0 0;
+  }
+  #prog .fa-calendar {
+    font-size: 5em;
+    margin: 18px 5px 0 0;
+  }
+  #map .fa-compass {
+    font-size: 6em;
+    margin: 14px 5px 0 0;
+  }
+  #social .fa-users {
+    font-size: 5.1em;
+    margin: 18px 5px 0 0;
+  }
+  .btn-default {
+    font-size: 2em;
+    padding: 20px 0 20px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 360px) {
+  #map_canvas {
+    height: 385px;
+    margin-top: 9px;
+  }
+  .ui-content .page-title {
+    margin: 20px 0 20px 15px;
+    font-size: 2.3em;
+    line-height: 0.65em;
+  }
+  .ui-content .page-title small {
+    font-size: 0.65em;
+  }
+  .ui-content .page-title .tiny {
+    font-size: 0.42em;
+    top: 4px;
+  }
+  .ui-content .paragraph {
+    font-size: 1.15em;
+    padding: 15px;
+    line-height: 1.5em;
   }
 }
