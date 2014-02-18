@@ -4895,7 +4895,6 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #47515e;
-  background: url(../../img/iphone-5/background.png);
   overflow: hidden;
 }
 input,
@@ -5648,7 +5647,7 @@ hr {
     -webkit-transform: rotateY(0);
   }
   to {
-    -webkit-transform: rotateY(-89.99999999deg) scale(0.9);
+    -webkit-transform: rotateY(-90deg) scale(0.9);
   }
 }
 @-moz-keyframes flipouttoleft {
@@ -5926,6 +5925,9 @@ hr {
   margin-top: -10px;
 }
 @media (max-width: 320px) {
+  body {
+    background: url(../../img/iphone-5/background.png);
+  }
   .img-home {
     display: block;
     background: url('../../img/iphone-5/img-home.png');
@@ -6100,6 +6102,9 @@ hr {
   }
 }
 @media (min-width: 768px) {
+  body {
+    background: url(../../img/ipad-2/background.png);
+  }
   #map_canvas {
     height: 826px!important;
     margin-top: 9px;
@@ -6110,9 +6115,13 @@ hr {
     width: 100%;
     height: 500px;
   }
+  .btn-route {
+    width: 90%!important;
+    margin-left: 5%;
+  }
   .ui-content .page-title {
-    margin: 30px 0 40px 25px;
-    font-size: 4.5em;
+    margin: 30px 0 40px 25px!important;
+    font-size: 4.5em!important;
     line-height: 0.65em;
   }
   .ui-content .page-title small {
@@ -6123,10 +6132,10 @@ hr {
     top: 4px;
   }
   .ui-content .paragraph {
-    font-size: 1.8em;
+    font-size: 1.8em!important;
     padding: 15px;
-    margin-top: 15px;
-    line-height: 1.8em;
+    margin-top: 15px!important;
+    line-height: 1.8em!important;
   }
   .navbar-main-bottom-fixed {
     position: fixed;
@@ -6157,6 +6166,65 @@ hr {
     padding: 20px 0 20px 0;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .list-step-social .separator {
+    width: 16px;
+    height: 50px;
+    margin-left: 51%;
+    margin-top: -4px;
+  }
+  .list-step-social .step-social {
+    height: 130px;
+    width: 60%;
+    margin-left: 5%;
+  }
+  .list-step-social .step-social p {
+    width: 180px;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    padding: 6px;
+    border-radius: 6px;
+  }
+  .list-step-social .step-social button {
+    width: 130px;
+    height: 130px;
+    margin: 0 35px 0 0!important;
+    border-radius: 50%!important;
+  }
+  .list-step-social .login button {
+    font-size: 1.3em;
+  }
+  .list-step-social .login p {
+    margin-top: 35px;
+  }
+  .list-step-social .camera-snap button {
+    font-size: 2em;
+  }
+  .list-step-social .camera-snap p {
+    margin-top: 40px;
+  }
+  .list-step-social .photo button {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px!important;
+    margin-top: -20px;
+    border-radius: 5px!important;
+    padding: 0!important;
+  }
+  .list-step-social .photo button .img-share {
+    width: 150px;
+    height: 150px;
+    margin: 0!important;
+    border-radius: 5px;
+  }
+  .list-step-social .photo p {
+    margin-top: 40px;
+  }
+  .list-step-social .share button {
+    font-size: 1.4em;
+  }
+  .list-step-social .share p {
+    margin-top: 45px;
   }
 }
 @media (min-width: 360px) {
