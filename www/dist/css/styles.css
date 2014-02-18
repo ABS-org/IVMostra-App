@@ -5701,7 +5701,7 @@ hr {
 }
 @-moz-keyframes flipintoleft {
   from {
-    -moz-transform: rotateY(-90deg) scale(0.9);
+    -moz-transform: rotateY(-89.99999999deg) scale(0.9);
   }
   to {
     -moz-transform: rotateY(0);
@@ -5934,6 +5934,10 @@ hr {
   }
 }
 @media (max-width: 320px) and (min-height: 568px) {
+  #map_canvas {
+    height: 420px;
+    margin-top: 9px;
+  }
   #prog .ui-content .page-title {
     margin: 20px 0 50px 15px;
   }
@@ -5954,10 +5958,6 @@ hr {
     padding: 15px;
     margin-top: 15px;
     line-height: 1.5em;
-  }
-  #map_canvas {
-    height: 420px;
-    margin-top: 9px;
   }
   .list-step-social .separator {
     width: 8px;
@@ -6100,6 +6100,10 @@ hr {
   }
 }
 @media (min-width: 768px) {
+  #map_canvas {
+    height: 826px!important;
+    margin-top: 9px;
+  }
   .img-home {
     display: block;
     background: url('../../img/ipad-2/img-home.png');
@@ -6155,7 +6159,7 @@ hr {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 360px) {
+@media (min-width: 360px) {
   #map_canvas {
     height: 385px;
     margin-top: 9px;
