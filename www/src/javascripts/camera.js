@@ -29,7 +29,7 @@ var pictureSource;   // picture source
 
       $(".btnCompartilhar").hide();
       $(".loading-upload").show();
-      $.post('http://imagens.app.atencaobasica.org.br/upload.php',{imagem: imageData},function(data){
+      $.post('http://imagens.app.dev.atencaobasica.org.br/upload.php',{imagem: imageData},function(data){
           //alert(data)
          upload_foto = data;
          $(".btnCompartilhar").show();
