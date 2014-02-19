@@ -6228,13 +6228,32 @@ hr {
   }
 }
 @media (min-width: 360px) {
+  body {
+    background: url(../../img/android-s3/background.png);
+  }
+  .img-home {
+    display: block;
+    background: url('../../img/android-s3/img-home.png');
+    width: 100%;
+    height: 200px;
+  }
   #map_canvas {
-    height: 385px;
+    height: 490px;
     margin-top: 9px;
+  }
+  .btn-route {
+    width: 90%!important;
+    margin-left: 5%;
+  }
+  #prog .ui-content .page-title {
+    margin: 20px 0 70px 15px;
+  }
+  #social .ui-content .page-title {
+    margin: 20px 0 45px 15px;
   }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
-    font-size: 2.3em;
+    font-size: 3em;
     line-height: 0.65em;
   }
   .ui-content .page-title small {
@@ -6245,8 +6264,33 @@ hr {
     top: 4px;
   }
   .ui-content .paragraph {
-    font-size: 1.15em;
+    font-size: 1.3em;
     padding: 15px;
     line-height: 1.5em;
+    margin-top: 25px;
+  }
+  .navbar-main-bottom-fixed {
+    position: fixed;
+    bottom: 0;
+  }
+  .navbar-main-bottom-fixed .ui-btn {
+    width: 70px;
+    height: 50px;
+  }
+  #home .fa-home {
+    font-size: 3.3em;
+    margin: 5px 5px 0 0;
+  }
+  #prog .fa-calendar {
+    font-size: 2.8em;
+    margin: 9px 5px 0 0;
+  }
+  #map .fa-compass {
+    font-size: 3.3em;
+    margin: 6px 5px 0 0;
+  }
+  #social .fa-users {
+    font-size: 2.8em;
+    margin: 7px 5px 0 0;
   }
 }
