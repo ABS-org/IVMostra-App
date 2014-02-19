@@ -70,4 +70,4 @@ gerado em: [Phonegap Build](https://build.phonegap.com/apps/765810/builds)
 
 ## Copyright
 
-ABS-org © 2014 - IV Mostra
+ABS-org © 2014 - [IV Mostra](http://www.mostrasaude.net/)
