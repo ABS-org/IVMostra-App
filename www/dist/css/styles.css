@@ -5372,7 +5372,7 @@ hr {
   animation-name: slideinfromleft;
 }
 .slidefade.out {
-  -webkit-transform: translateX(-99.99999999%);
+  -webkit-transform: translateX(-100%);
   -webkit-animation-name: slideouttoleft;
   -webkit-animation-duration: 225ms;
   -moz-transform: translateX(-100%);
@@ -5708,7 +5708,7 @@ hr {
 }
 @keyframes flipintoleft {
   from {
-    transform: rotateY(-90deg) scale(0.9);
+    transform: rotateY(-89.99999999deg) scale(0.9);
   }
   to {
     transform: rotateY(0);
@@ -6292,5 +6292,143 @@ hr {
   #social .fa-users {
     font-size: 2.8em;
     margin: 7px 5px 0 0;
+  }
+}
+@media (width: 240px) {
+  body {
+    background: url(../../img/android-s3/background.png) !important;
+  }
+  .img-home {
+    display: block;
+    background: url('../../img/galaxy-y/img-home.png') !important;
+    width: 100%;
+    height: 100px!important;
+  }
+  #map_canvas {
+    height: 205px!important;
+    margin-top: 9px;
+  }
+  .btn-route {
+    width: 90%!important;
+    margin-left: 5%;
+    font-size: 0.9em;
+  }
+  #prog .ui-content .page-title {
+    margin: 15px 0 10px 15px!important;
+  }
+  #social .ui-content .page-title {
+    margin: 10px 0 5px 15px!important;
+    font-size: 1.2em!important;
+  }
+  #social .ui-content .page-title small {
+    display: none !important;
+  }
+  .btn-default {
+    font-size: 1em;
+    padding: 7px 0 7px 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .ui-content .page-title {
+    margin: 6px 0 8px 15px!important;
+    font-size: 1.7em!important;
+    line-height: 0.65em;
+  }
+  .ui-content .page-title small {
+    font-size: 0.65em;
+  }
+  .ui-content .page-title .tiny {
+    font-size: 0.42em;
+    top: 4px;
+  }
+  .ui-content .paragraph {
+    font-size: 0.85em;
+    padding: 2px;
+    line-height: 1.2em;
+    margin-top: 15px;
+  }
+  .navbar-main-bottom-fixed {
+    position: fixed;
+    bottom: 0;
+  }
+  .navbar-main-bottom-fixed .ui-btn {
+    width: 60px;
+    height: 30px;
+  }
+  #home .fa-home {
+    font-size: 2.5em;
+    margin: 1px 20px 0 0;
+  }
+  #prog .fa-calendar {
+    font-size: 2em;
+    margin: 3px 23px 0 0;
+  }
+  #map .fa-compass {
+    font-size: 2.5em;
+    margin: 0 22px 0 0;
+  }
+  #social .fa-users {
+    font-size: 2em;
+    margin: 3px 21px 0 0;
+  }
+  .list-step-social .separator {
+    width: 6px;
+    height: 18px;
+    margin-left: 51%;
+    margin-top: -4px;
+  }
+  .list-step-social .step-social {
+    height: 50px;
+    width: 60%;
+    margin-left: 2%;
+  }
+  .list-step-social .step-social p {
+    width: 50px;
+    font-size: 0.75em;
+    line-height: 1.2em;
+    padding: 6px;
+    border-radius: 4px;
+  }
+  .list-step-social .step-social button {
+    width: 50px;
+    height: 50px;
+    margin: 0!important;
+    border-radius: 50%!important;
+  }
+  .list-step-social .login button {
+    font-size: 0.6em;
+  }
+  .list-step-social .login p {
+    margin-top: 5px;
+  }
+  .list-step-social .camera-snap button {
+    font-size: 0.7em;
+  }
+  .list-step-social .camera-snap p {
+    margin-top: 15px;
+  }
+  .list-step-social .photo button {
+    width: 55px;
+    height: 55px;
+    margin-right: -3px !important;
+    margin-top: -20px;
+    border-radius: 5px!important;
+    padding: 0!important;
+  }
+  .list-step-social .photo button .img-share {
+    width: 55px;
+    height: 55px;
+    margin: 0!important;
+    border-radius: 5px;
+  }
+  .list-step-social .photo p {
+    margin-top: 1px;
+  }
+  .list-step-social .share button {
+    font-size: 0.7em;
+    margin-top: -15px !important;
+  }
+  .list-step-social .share p {
+    margin-top: 0!important;
   }
 }
