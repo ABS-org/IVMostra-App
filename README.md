@@ -26,7 +26,7 @@
 | Galaxy SIII (I9300)    | 4.8           | 720 x 1280      | 306     | 2               |√        |
 | Galaxy S4 (I9500)      | 5             | 1080 x 1920     | 441     | 3               |X        |
 | LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 2               |√        |
-| Galaxy Y (S5360)       | 3.0           | 240 x 320       | 133     | 1               |X        |
+| Galaxy Y (S5360)       | 3.0           | 240 x 320       | 133     | 1               |√        |
 
 *Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) ou [aqui](http://en.wikipedia.org/wiki/List_of_displays_by_pixel_density) o tamanho de tela do seu device e adicione-o!*
 
