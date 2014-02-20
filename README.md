@@ -28,6 +28,7 @@
 | Galaxy S4 (I9500)      | 5             | 1080 x 1920     | 441     | 3               |√        |
 | LG Nexus 4 E960        | 4.7           | 768 x 1280      | 318     | 2               |√        |
 | Galaxy Ace             | 3.5           | 320 x 480       | 164     | 1               |√        |
+| Galaxy Gio (GT-S5660)  | 3.2           | 320 x 480       | 180     | 1               |√        |
 | Galaxy Y (S5360)       | 3.0           | 240 x 320       | 133     | 1               |√        |
 
 *Veja [aqui](http://mobile.smashingmagazine.com/2013/03/21/responsive-web-design-with-physical-units/) ou [aqui](http://en.wikipedia.org/wiki/List_of_displays_by_pixel_density) o tamanho de tela do seu device e adicione-o!*
