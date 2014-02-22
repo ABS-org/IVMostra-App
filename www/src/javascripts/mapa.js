@@ -3,7 +3,7 @@
       $("#maps").bind('pageinit', function() {
         $('#map_canvas').gmap().bind('init', function(ev, map) {
           $('#map_canvas').gmap('addMarker', {'position': '-15.816307,-47.8439705', 'bounds': true}).click(function() {
-            $('#map_canvas').gmap('openInfoWindow', {'content': 'Hello World!'}, this);
+            $('#map_canvas').gmap('openInfoWindow', {'content': 'CICB - Centro Internacional de Convenções do Brasil'}, this);
           });
           $('#map_canvas').gmap('option', 'zoom', 13);
         });
