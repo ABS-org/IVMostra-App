@@ -5031,6 +5031,13 @@ hr {
 .navbar-main-bottom-fixed .btn-orange-active:hover {
   text-shadow: 1px 1px 1px #ab6007;
 }
+.navbar-main-bottom-fixed .btn-red-active {
+  background: #ed2228;
+  text-shadow: 1px 1px 1px #9c0d11;
+}
+.navbar-main-bottom-fixed .btn-red-active:hover {
+  text-shadow: 1px 1px 1px #9c0d11;
+}
 .navbar-main-bottom-fixed .btn-blue-active {
   background: #4795d7;
   text-shadow: 1px 1px 1px #216197;
@@ -5444,7 +5451,7 @@ hr {
   animation-duration: 150ms;
 }
 .slidedown.out.reverse {
-  -webkit-transform: translateY(-100%);
+  -webkit-transform: translateY(-99.99999999%);
   -webkit-animation-name: slideouttotop;
   -webkit-animation-duration: 200ms;
   -moz-transform: translateY(-100%);
@@ -5491,7 +5498,7 @@ hr {
     -moz-transform: translateY(0);
   }
   to {
-    -moz-transform: translateY(-99.99999999%);
+    -moz-transform: translateY(-100%);
   }
 }
 @keyframes slideouttotop {
@@ -5901,6 +5908,10 @@ hr {
 .arrow-blue:after,
 .arrow-blue:before {
   border-bottom-color: #4795d7;
+}
+.arrow-red:after,
+.arrow-red:before {
+  border-bottom-color: #ed2228;
 }
 .arrow-right {
   position: relative;
