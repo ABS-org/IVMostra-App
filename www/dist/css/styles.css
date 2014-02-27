@@ -4926,6 +4926,14 @@ hr {
   border: 0;
   border-top: 1px solid #e9ebee;
 }
+/* IV Mostra App
+* v0.1.x
+* core/sections.less
+*/
+.ui-content .img-home {
+  border-top: 2px solid #a3cd3a;
+  border-bottom: 2px solid #f69522;
+}
 .ui-content .page-title {
   font-weight: 500;
   color: #3c4450;
@@ -4934,24 +4942,55 @@ hr {
   position: relative;
 }
 .ui-content .paragraph {
-  text-align: center;
+  width: 86%;
+  font-size: 1.1em!important;
+  background: #dbdee3;
+  padding: 1.1em 2em 1em 0.8em!important;
+  border-radius: 10px 0 0 10px;
+  margin-top: 2em!important;
+  margin-left: 5%;
+  text-align: left;
   color: #3c4450;
 }
-#home .fa-home {
-  font-size: 3.4em;
-  margin: 2px 5px 0 0;
+.ui-content .paragraph small {
+  margin-top: 0.3em;
 }
-#prog .fa-calendar {
-  font-size: 3em;
-  margin: 5px 5px 0 0;
+.ui-content .paragraph .title {
+  font-size: 1.2em!important;
+  font-weight: normal;
+  margin-bottom: 0.4em;
 }
-#map .fa-compass {
-  font-size: 3.5em;
-  margin: 4px 5px 0 0;
+.ui-content .paragraph .title strong {
+  font-size: 1.3em;
 }
-#social .fa-users {
-  font-size: 2.8em;
-  margin: 8px 5px 0 0;
+/* IV Mostra App
+* v0.1.x
+* core/bar-colors.less
+*/
+.bar-colors-top {
+  height: 4px;
+  background: #68768a;
+}
+.bar-colors-top .bar-default {
+  width: 60%;
+}
+.bar-colors-top .bar-color {
+  width: 10%;
+  height: 100%;
+  display: block;
+  float: right;
+}
+.bar-colors-top .bar-blue {
+  background: #4795d7;
+}
+.bar-colors-top .bar-green {
+  background: #a3cd3a;
+}
+.bar-colors-top .bar-orange {
+  background: #f69522;
+}
+.bar-colors-top .bar-red {
+  background: #ec252a;
 }
 .btn-default {
   width: 80%;
@@ -4985,10 +5024,6 @@ hr {
   color: #ffffff !important;
   text-shadow: 1px 1px 1px #684488 !important;
 }
-.img-home {
-  border-top: 4px solid #a3cd3a;
-  border-bottom: 4px solid #f69522;
-}
 .btn-route {
   background: #4795d7 !important;
   color: #ffffff !important;
@@ -4999,6 +5034,26 @@ hr {
   border: none;
   border-radius: 0;
   margin-bottom: 0px;
+}
+/* IV Mostra App
+* v0.1.x
+* core/menu.less
+*/
+#home .fa-home {
+  font-size: 3em;
+  margin: 2px 5px 0 0;
+}
+#prog .fa-calendar {
+  font-size: 2.6em;
+  margin: 5px 5px 0 0;
+}
+#map .fa-compass {
+  font-size: 3.1em;
+  margin: 4px 5px 0 0;
+}
+#social .fa-users {
+  font-size: 2.4em;
+  margin: 8px 5px 0 0;
 }
 /* Menu: Navbar botom fixed */
 .navbar-main-bottom-fixed {
@@ -5451,7 +5506,7 @@ hr {
   animation-duration: 150ms;
 }
 .slidedown.out.reverse {
-  -webkit-transform: translateY(-99.99999999%);
+  -webkit-transform: translateY(-100%);
   -webkit-animation-name: slideouttotop;
   -webkit-animation-duration: 200ms;
   -moz-transform: translateY(-100%);
@@ -5745,6 +5800,10 @@ hr {
     transform: rotateY(0);
   }
 }
+.cplogo-icon {
+  width: 3em;
+  height: 3em;
+}
 /* Map Canvas */
 #map_canvas {
   width: 100%;
@@ -5754,31 +5813,6 @@ hr {
   background: url('../../img/android-s3/img-home.png');
   width: 100%;
   height: 200px;
-}
-.bar-colors-top {
-  height: 4px;
-  background: #68768a;
-}
-.bar-colors-top .bar-default {
-  width: 60%;
-}
-.bar-colors-top .bar-color {
-  width: 10%;
-  height: 100%;
-  display: block;
-  float: right;
-}
-.bar-colors-top .bar-blue {
-  background: #4795d7;
-}
-.bar-colors-top .bar-green {
-  background: #a4ce3a;
-}
-.bar-colors-top .bar-orange {
-  background: #f69522;
-}
-.bar-colors-top .bar-red {
-  background: #ed2228;
 }
 .list-step-social .separator {
   width: 8px;
@@ -5947,9 +5981,10 @@ hr {
   }
   .img-home {
     display: block;
-    background: url('../../img/iphone-5/img-home.png');
+    background-image: url('../../img/iphone-5/img-home@2x.png');
+    background-size: 320px 185px;
     width: 100%;
-    height: 200px;
+    height: 185px;
   }
 }
 @media (max-width: 320px) and (min-height: 568px) {
