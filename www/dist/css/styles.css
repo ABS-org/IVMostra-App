@@ -4930,6 +4930,11 @@ hr {
 * v0.1.x
 * core/sections.less
 */
+.ui-content #map_canvas {
+  width: 100%;
+  height: 30.5em;
+  margin-top: 0.6em;
+}
 .ui-content .img-home {
   border-top: 2px solid #a3cd3a;
   border-bottom: 2px solid #f69522;
@@ -4942,23 +4947,20 @@ hr {
   position: relative;
 }
 .ui-content .paragraph {
-  width: 86%;
-  font-size: 1.1em!important;
-  background: #dbdee3;
-  padding: 1.1em 2em 1em 0.8em!important;
-  border-radius: 10px 0 0 10px;
-  margin-top: 2em!important;
-  margin-left: 5%;
+  width: 90%;
+  font-size: 1.15em!important;
+  margin-top: 1.2em!important;
   text-align: left;
   color: #3c4450;
 }
 .ui-content .paragraph small {
-  margin-top: 0.3em;
+  margin-top: 0.5em!important;
+  display: block;
 }
 .ui-content .paragraph .title {
-  font-size: 1.2em!important;
+  font-size: 1.3em!important;
   font-weight: normal;
-  margin-bottom: 0.4em;
+  margin-bottom: 0.6em;
 }
 .ui-content .paragraph .title strong {
   font-size: 1.3em;
@@ -5040,20 +5042,20 @@ hr {
 * core/menu.less
 */
 #home .fa-home {
-  font-size: 3em;
-  margin: 2px 5px 0 0;
+  font-size: 2.8em;
+  margin: 0.18em 0.35em 0 0;
 }
 #prog .fa-calendar {
-  font-size: 2.6em;
-  margin: 5px 5px 0 0;
+  font-size: 2.3em;
+  margin: 0.3em 0.35em 0 0;
 }
 #map .fa-compass {
-  font-size: 3.1em;
-  margin: 4px 5px 0 0;
+  font-size: 2.9em;
+  margin: 0.16em 0.3em 0 0;
 }
 #social .fa-users {
-  font-size: 2.4em;
-  margin: 8px 5px 0 0;
+  font-size: 2.3em;
+  margin: 0.3em 0.3em 0 0;
 }
 /* Menu: Navbar botom fixed */
 .navbar-main-bottom-fixed {
@@ -5061,9 +5063,28 @@ hr {
   bottom: 0;
 }
 .navbar-main-bottom-fixed .ui-btn {
-  background: #ccd1d9;
-  width: 60px;
-  height: 50px;
+  background: #454e5b;
+  width: 4em;
+  height: 3.5em;
+  color: #dbdee3 !important;
+  text-shadow: 1px 1px 1px #262b33;
+}
+.navbar-main-bottom-fixed .ui-btn:hover {
+  text-shadow: 1px 1px 1px #262b33;
+}
+.navbar-main-bottom-fixed .cplogo-icon {
+  width: 2.55em;
+  height: 2.55em;
+  margin: 0.43em 0.8em 0 0;
+  fill: #dbdee3;
+  text-shadow: 1px 1px 1px #262b33;
+}
+.navbar-main-bottom-fixed .cplogo-icon-active {
+  width: 2.55em;
+  height: 2.55em;
+  margin: 0.43em 0.8em 0 0;
+  fill: #ffffff;
+  text-shadow: 1px 1px 1px #3f0607;
 }
 .navbar-main-bottom-fixed .btn-purple-active {
   background: #8255aa;
@@ -5329,7 +5350,7 @@ hr {
 }
 @-moz-keyframes slideinfromleft {
   from {
-    -moz-transform: translateX(-100%);
+    -moz-transform: translateX(-99.99999999%);
   }
   to {
     -moz-transform: translateX(0);
@@ -5800,10 +5821,6 @@ hr {
     transform: rotateY(0);
   }
 }
-.cplogo-icon {
-  width: 3em;
-  height: 3em;
-}
 /* Map Canvas */
 #map_canvas {
   width: 100%;
@@ -5988,10 +6005,6 @@ hr {
   }
 }
 @media (max-width: 320px) and (min-height: 568px) {
-  #map_canvas {
-    height: 420px;
-    margin-top: 9px;
-  }
   #prog .ui-content .page-title {
     margin: 20px 0 50px 15px;
   }
