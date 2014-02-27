@@ -1,24 +1,75 @@
+/* IV Mostra App
+* v0.1.x
+* core/menu.less
+*/
+
 #home {
 	.fa-home {
-		font-size: 3.4em;
+		font-size: 3em;
 		margin: 2px 5px 0 0;
 	}
 }
 #prog {
 	.fa-calendar {
-		font-size: 3em;
+		font-size: 2.6em;
 		margin: 5px 5px 0 0;
 	}
 }
 #map {
 	.fa-compass {
-		font-size: 3.5em;
+		font-size: 3.1em;
 		margin: 4px 5px 0 0;
 	}
 }
 #social {
 	.fa-users {
-		font-size: 2.8em;
+		font-size: 2.4em;
 		margin: 8px 5px 0 0;
 	}
+}
+
+/* Menu: Navbar botom fixed */
+.navbar-main-bottom-fixed {
+  position: fixed;
+  bottom: 0;
+  .ui-btn {
+  	background: @gray-light;
+  	width: 60px;
+  	height: 50px;
+  }
+  .btn-purple-active {
+  	background: @purple;
+  	text-shadow: 1px 1px 1px darken(@purple, 20%);
+  	&:hover {
+  		text-shadow: 1px 1px 1px darken(@purple, 20%);
+  	}
+  }
+  .btn-green-active {
+  	background: @green;
+  	text-shadow: 1px 1px 1px darken(@green, 20%);
+  	&:hover {
+  		text-shadow: 1px 1px 1px darken(@green, 20%);
+  	}
+  }
+  .btn-orange-active {
+  	background: @orange;
+  	text-shadow: 1px 1px 1px darken(@orange, 20%);
+  	&:hover {
+  		text-shadow: 1px 1px 1px darken(@orange, 20%);
+  	}
+  }
+  .btn-red-active {
+  	background: #ed2228;
+  	text-shadow: 1px 1px 1px darken(#ed2228, 20%);
+  	&:hover {
+  		text-shadow: 1px 1px 1px darken(#ed2228, 20%);
+  	}
+  }
+  .btn-blue-active {
+  	background: @blue;
+  	text-shadow: 1px 1px 1px darken(@blue, 20%);
+  	&:hover {
+  		text-shadow: 1px 1px 1px darken(@blue, 20%);
+  	}
+  }
 }
