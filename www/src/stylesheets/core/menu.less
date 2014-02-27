@@ -33,10 +33,24 @@
   position: fixed;
   bottom: 0;
   .ui-btn {
-  	background: @gray-light;
-  	width: 60px;
-  	height: 50px;
+  	background: darken(@gray, 16%);
+  	width: 4em;
+  	height: 3.5em;
+  	color: lighten(@gray, 40%)!important;
+  	text-shadow: 1px 1px 1px darken(@gray, 30%);
   }
+  .cplogo-icon {
+		width: 3em;
+		height: 3em;
+		fill: lighten(@gray, 40%);
+		text-shadow: 1px 1px 1px darken(@gray, 30%);
+	}
+	.cplogo-icon-active {
+		width: 3em;
+		height: 3em;
+		fill: darken(@gray, 30%);
+		text-shadow: 1px 1px 1px lighten(@gray, 40%);
+	}
   .btn-purple-active {
   	background: @purple;
   	text-shadow: 1px 1px 1px darken(@purple, 20%);
