@@ -730,7 +730,7 @@ div.ui-mobile-viewport {
   padding: 0;
   width: 1.75em;
   height: 1.75em;
-  text-indent: -9998.99999999px;
+  text-indent: -9999px;
   white-space: nowrap !important;
 }
 .ui-mini {
@@ -4930,14 +4930,18 @@ hr {
 * v0.1.x
 * core/sections.less
 */
+.ui-content .img-home {
+  background-image: url('../../img/iphone-5/img-home@2x.png');
+  background-size: 100% 100%;
+  width: 100%;
+  height: 13.18em;
+  border-top: 2px solid #a3cd3a;
+  border-bottom: 2px solid #f69522;
+}
 .ui-content #map_canvas {
   width: 100%;
   height: 30.5em;
   margin-top: 0.6em;
-}
-.ui-content .img-home {
-  border-top: 2px solid #a3cd3a;
-  border-bottom: 2px solid #f69522;
 }
 .ui-content .page-title {
   font-weight: 500;
@@ -4992,7 +4996,83 @@ hr {
   background: #f69522;
 }
 .bar-colors-top .bar-red {
-  background: #ec252a;
+  background: #ff4444;
+}
+/* IV Mostra App
+* v0.1.x
+* core/arrows.less
+*/
+.arrow {
+  position: relative;
+}
+.arrow:after,
+.arrow:before {
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-width: 10px;
+  margin-left: -10px;
+}
+.arrow:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-width: 13px;
+  margin-left: -13px;
+}
+.arrow-purple:after,
+.arrow-purple:before {
+  border-bottom-color: #8255aa;
+}
+.arrow-green:after,
+.arrow-green:before {
+  border-bottom-color: #a3cd3a;
+}
+.arrow-orange:after,
+.arrow-orange:before {
+  border-bottom-color: #f69522;
+}
+.arrow-blue:after,
+.arrow-blue:before {
+  border-bottom-color: #4795d7;
+}
+.arrow-red:after,
+.arrow-red:before {
+  border-bottom-color: #ed2228;
+}
+.arrow-right {
+  position: relative;
+  background: #88b7d5;
+  border: 1px solid #ccd1d9;
+}
+.arrow-right:after,
+.arrow-right:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.arrow-right:after {
+  border-color: rgba(136, 183, 213, 0);
+  border-left-color: #e9ebee;
+  border-width: 6px;
+  margin-top: -6px;
+}
+.arrow-right:before {
+  border-color: rgba(194, 225, 245, 0);
+  border-left-color: #ccd1d9;
+  border-width: 10px;
+  margin-top: -10px;
 }
 .btn-default {
   width: 80%;
@@ -5084,7 +5164,7 @@ hr {
   height: 2.55em;
   margin: 0.43em 0.8em 0 0;
   fill: #ffffff;
-  text-shadow: 1px 1px 1px #3f0607;
+  text-shadow: 1px 1px 1px #770000;
 }
 .navbar-main-bottom-fixed .btn-purple-active {
   background: #8255aa;
@@ -5350,7 +5430,7 @@ hr {
 }
 @-moz-keyframes slideinfromleft {
   from {
-    -moz-transform: translateX(-99.99999999%);
+    -moz-transform: translateX(-100%);
   }
   to {
     -moz-transform: translateX(0);
@@ -5821,16 +5901,6 @@ hr {
     transform: rotateY(0);
   }
 }
-/* Map Canvas */
-#map_canvas {
-  width: 100%;
-}
-.img-home {
-  display: block;
-  background: url('../../img/android-s3/img-home.png');
-  width: 100%;
-  height: 200px;
-}
 .list-step-social .separator {
   width: 8px;
   height: 18px;
@@ -5920,88 +5990,9 @@ hr {
 .list-step-social .share p {
   margin-top: 21px;
 }
-.arrow {
-  position: relative;
-}
-.arrow:after,
-.arrow:before {
-  bottom: 100%;
-  left: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-.arrow:after {
-  border-color: rgba(136, 183, 213, 0);
-  border-width: 10px;
-  margin-left: -10px;
-}
-.arrow:before {
-  border-color: rgba(194, 225, 245, 0);
-  border-width: 13px;
-  margin-left: -13px;
-}
-.arrow-purple:after,
-.arrow-purple:before {
-  border-bottom-color: #8255aa;
-}
-.arrow-green:after,
-.arrow-green:before {
-  border-bottom-color: #a3cd3a;
-}
-.arrow-orange:after,
-.arrow-orange:before {
-  border-bottom-color: #f69522;
-}
-.arrow-blue:after,
-.arrow-blue:before {
-  border-bottom-color: #4795d7;
-}
-.arrow-red:after,
-.arrow-red:before {
-  border-bottom-color: #ed2228;
-}
-.arrow-right {
-  position: relative;
-  background: #88b7d5;
-  border: 1px solid #ccd1d9;
-}
-.arrow-right:after,
-.arrow-right:before {
-  left: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-.arrow-right:after {
-  border-color: rgba(136, 183, 213, 0);
-  border-left-color: #e9ebee;
-  border-width: 6px;
-  margin-top: -6px;
-}
-.arrow-right:before {
-  border-color: rgba(194, 225, 245, 0);
-  border-left-color: #ccd1d9;
-  border-width: 10px;
-  margin-top: -10px;
-}
 @media (max-width: 320px) {
   body {
     background: url(../../img/iphone-5/background.png);
-  }
-  .img-home {
-    display: block;
-    background-image: url('../../img/iphone-5/img-home@2x.png');
-    background-size: 320px 185px;
-    width: 100%;
-    height: 185px;
   }
 }
 @media (max-width: 320px) and (min-height: 568px) {
@@ -6104,10 +6095,6 @@ hr {
     font-size: 1em;
     padding: 15px;
     line-height: 1.5em;
-  }
-  #map_canvas {
-    height: 330px;
-    margin-top: 9px;
   }
   .list-step-social .separator {
     width: 8px;
