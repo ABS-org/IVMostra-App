@@ -1,0 +1,101 @@
+
+// Step social
+.list-step-social {
+  .separator {
+    width: 8px;
+    height: 18px;
+    margin-left: 51%;
+    margin-top: -4px;
+    background: @gray-light;
+  }
+  .step-social {
+    height: 82px;
+    width: 60%;
+    margin-left: 5%;
+    display: block;
+    p {
+      color: @gray;
+      width: 70px;
+      float: left;
+      font-size: 0.9em;
+      line-height: 1.2em;
+      background: @gray-lighter;
+      padding: 6px;
+      border-radius: 6px;
+      border: 2px solid @gray-light;
+      opacity: 0.7;
+    }
+    button {
+      width: 80px;
+      height: 80px;
+      margin: 0!important;
+      border-radius: 50%!important;
+      float: right;
+      box-shadow: none!important;
+    }
+  }
+  .login {
+    button {
+      font-size: 0.9em;
+      background: #415e9b;
+      border: 3px solid #5b73a8!important;
+      color: @white!important;
+      text-shadow: 1px 1px 1px #263760!important;
+    }
+    p {
+      margin-top: 9px;
+    }
+  }
+  .camera-snap {
+    button {
+      background: @green;
+      border: 3px solid lighten(@green, 20%);
+      color: @white;
+      text-shadow: 1px 1px 1px darken(@green, 20%);
+      &:hover {
+        color: @white;
+        text-shadow: 1px 1px 1px darken(@green, 20%);
+      }
+    }
+    p {
+      margin-top: 22px;
+    }
+  }
+  .photo {
+    button {
+      width: 90px;
+      height: 90px;
+      margin-right: -4px!important;
+      margin-top: -20px;
+      border: 2px solid @gray-light;
+      border-radius: 5px!important;
+      padding: 0!important;
+      background: @gray-lighter;
+      .img-share {
+        width: 90px;
+        height: 90px;
+        margin: 0!important;
+        border-radius: 5px;
+      }
+    }
+    p {
+      margin-top: 12px;
+    }
+  }
+  .share {
+    button {
+      background: @orange;
+      border: 3px solid lighten(@orange, 20%);
+      color: @white;
+      text-shadow: 1px 1px 1px darken(@orange, 20%);
+      font-size: 0.9em;
+      &:hover {
+        color: @white;
+        text-shadow: 1px 1px 1px darken(@orange, 20%);
+      }
+    }
+    p {
+      margin-top: 21px;
+    }
+  }
+}
