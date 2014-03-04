@@ -3,43 +3,46 @@
 * core/sections.less
 */
 
-.ui-content {
+
+// Home
+#one {
   .img-home {
     background-size: 100% 100%;
     width: 100%;
     border-top: 2px solid @green;
     border-bottom: 2px solid @orange;
   }
-  #map_canvas {
-    width: 100%;
-    height: 30.5em; // Relative
-    margin-top: 0.6em; // Relative
+}
+
+#map_canvas {
+  width: 100%;
+  height: 30.5em; // Relative
+  margin-top: 0.6em; // Relative
+}
+.page-title {
+  font-weight: 500;
+  color: darken(@gray, 20%);
+  small { }
+  .tiny {
+    position: relative;
   }
-  .page-title {
-    font-weight: 500;
-    color: darken(@gray, 20%);
-    small { }
-    .tiny {
-      position: relative;
-    }
+}
+.paragraph {
+  width: 90%;
+  font-size: 1.15em!important;
+  margin-top: 1.2em!important;
+  text-align: left;
+  color: darken(@gray, 20%);
+  small {
+    margin-top: 0.5em!important;
+    display: block;
   }
-  .paragraph {
-    width: 90%;
-    font-size: 1.15em!important;
-    margin-top: 1.2em!important;
-    text-align: left;
-    color: darken(@gray, 20%);
-    small {
-      margin-top: 0.5em!important;
-      display: block;
-    }
-    .title {
-      font-size: 1.3em!important;
-      font-weight: normal;
-      margin-bottom: 0.6em;
-      strong {
-        font-size: 1.3em;
-      }
+  .title {
+    font-size: 1.3em!important;
+    font-weight: normal;
+    margin-bottom: 0.6em;
+    strong {
+      font-size: 1.3em;
     }
   }
 }
