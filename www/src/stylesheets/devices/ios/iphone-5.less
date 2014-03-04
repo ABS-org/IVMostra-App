@@ -3,6 +3,15 @@
 * devices/ios/iphone-5.less
 */
 
-body {
-  background: url(../../img/background-320x518.png);
+@media only screen
+and (min-device-width: 320px),
+and (max-device-width: 568px),
+and (-webkit-min-device-pixel-ratio: 2),
+and (min-device-pixel-ratio: 2),
+and (orientation: portrait) {
+  body {
+    background-image: url(../../img/background-320x568@2x.png);
+    background-size: 100%;
+  }
+
 }
