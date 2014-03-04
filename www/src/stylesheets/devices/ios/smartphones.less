@@ -17,9 +17,17 @@ and (orientation: portrait) {
 	}
 
 	// Home
-	.img-home {
-		background-image: url('../../img/img-home-320x285@2x.png');
-		height: 13.18em;
+	#one {
+		.img-home {
+			background-image: url('../../img/img-home-320x285@2x.png');
+			height: 13.18em;
+		}
+		.paragraph {
+			font-size: 1.15em;
+			padding: 15px;
+			margin-top: 15px;
+			line-height: 1.5em;
+		}
 	}
 
 	// Programação
@@ -31,6 +39,21 @@ and (orientation: portrait) {
 		}
 	}
 
+	.ui-content {
+		.page-title {
+			margin: 20px 0 20px 15px;
+			font-size: 2.3em;
+			line-height: 0.65em;
+			small {
+				font-size: 0.65em;
+			}
+			.tiny {
+				font-size: 0.42em;
+				top: 4px;
+			}
+		}
+	}
+
 }
 
 
@@ -38,26 +61,6 @@ and (orientation: portrait) {
 @media (max-width: 320px) {
 	// iOS - iPhone 5
 	@media (min-height: 568px) {
-		.ui-content {
-		  .page-title {
-		    margin: 20px 0 20px 15px;
-		    font-size: 2.3em;
-		    line-height: 0.65em;
-		    small {
-		      font-size: 0.65em;
-		    }
-		    .tiny {
-		      font-size: 0.42em;
-		      top: 4px;
-		    }
-		  }
-		  .paragraph {
-		    font-size: 1.15em;
-		    padding: 15px;
-		    margin-top: 15px;
-		    line-height: 1.5em;
-		  }
-		}
 		.list-step-social {
 			.separator {
 				width: 8px;
