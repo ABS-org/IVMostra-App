@@ -436,33 +436,30 @@
 
         <ul class="list-step-social">
           <li class="step-social login">
-            <p class="arrow-right">Faça o login no Facebook</p>
             <button id="facebook_login" onclick="facebook.onFacebookLogin()">
+              <p class="text">Faça o login no Facebook</p>
               <i class="fa fa-facebook fa-3x"></i>
-              <br>Login
             </button>
           </li>
-          <li class="separator"></li>
+
           <li class="step-social camera-snap">
-            <p class="arrow-right">Tire a foto</p>
             <button onclick="capturePhotoEdit();">
+              <p>Tire a foto</p>
               <i class="fa fa-camera fa-2x"></i>
             </button>
           </li>
-          <li class="separator"></li>
+
           <li class="step-social photo">
-            <p class="arrow-right">Sua foto aparecerá ao lado</p>
             <button>
+              <p>Sua foto aparecerá aqui o/</p>
               <img class="img-share" style="display:none;" id="smallImage" src="" />
             </button>
           </li>
-          <li class="separator"></li>
-          <li class="separator"></li>
+
           <li class="step-social share">
-            <p class="arrow-right">Compartilhe!</p>
             <button onClick="postFace(facebook,upload_foto)" class="btnCompartilhar">
               <i class="fa fa-share-square-o fa-2x"></i>
-              <br>Enviar
+              <p>Compartilhar!</p>
             </button>
             <img src="img/ajax-loader.png" class="loading-upload" style="display:none"/>
           </li>
