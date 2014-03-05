@@ -5641,41 +5641,39 @@ hr {
 * v0.1.x
 * core/sections.less
 */
-.ui-content .img-home {
+#one .img-home {
   background-size: 100% 100%;
   width: 100%;
   border-top: 2px solid #a3cd3a;
   border-bottom: 2px solid #f69522;
 }
-.ui-content #map_canvas {
+#maps #map_canvas {
   width: 100%;
-  height: 30.5em;
-  margin-top: 0.6em;
 }
-.ui-content .page-title {
+.page-title {
   font-weight: 500;
   color: #3c4450;
 }
-.ui-content .page-title .tiny {
+.page-title .tiny {
   position: relative;
 }
-.ui-content .paragraph {
+.paragraph {
   width: 90%;
   font-size: 1.15em!important;
   margin-top: 1.2em!important;
   text-align: left;
   color: #3c4450;
 }
-.ui-content .paragraph small {
+.paragraph small {
   margin-top: 0.5em!important;
   display: block;
 }
-.ui-content .paragraph .title {
+.paragraph .title {
   font-size: 1.3em!important;
   font-weight: normal;
   margin-bottom: 0.6em;
 }
-.ui-content .paragraph .title strong {
+.paragraph .title strong {
   font-size: 1.3em;
 }
 .list-step-social .separator {
@@ -6001,21 +5999,29 @@ hr {
 }
 /* IV Mostra App
 * v0.1.x
-* devices/ios/iphone-5.less
+* devices/ios/smartphones.less
 */
 @media only screen and (min-device-width: 320px), and (max-device-width: 568px), and (-webkit-min-device-pixel-ratio: 2), and (min-device-pixel-ratio: 2), and (orientation: portrait) {
   body {
     background-image: url(../../img/background-320x568@2x.png);
     background-size: 100%;
   }
-  .img-home {
+  #one .img-home {
     background-image: url('../../img/img-home-320x285@2x.png');
     height: 13.18em;
   }
-}
-@media (max-width: 320px) and (min-height: 568px) {
+  #one .paragraph {
+    font-size: 1.15em;
+    padding: 15px;
+    margin-top: 15px;
+    line-height: 1.5em;
+  }
   #prog .ui-content .page-title {
     margin: 20px 0 50px 15px;
+  }
+  #maps #map_canvas {
+    height: 30.5em;
+    margin-top: 0.6em;
   }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
@@ -6029,12 +6035,8 @@ hr {
     font-size: 0.42em;
     top: 4px;
   }
-  .ui-content .paragraph {
-    font-size: 1.15em;
-    padding: 15px;
-    margin-top: 15px;
-    line-height: 1.5em;
-  }
+}
+@media (max-width: 320px) and (min-height: 568px) {
   .list-step-social .separator {
     width: 8px;
     height: 18px;
