@@ -50,39 +50,35 @@ and (orientation: portrait) {
 	// Social
 	#social {
 		.list-step-social {
-			.separator {
-				width: 8px;
-				height: 18px;
-				margin-left: 51%;
-				margin-top: -4px;
-			}
 			.step-social {
-				height: 82px;
-				width: 60%;
-				margin-left: 5%;
-				p {
-					width: 70px;
-					font-size: 0.9em;
-					line-height: 1.2em;
-					padding: 6px;
-					border-radius: 6px;
-				}
 				button {
-					width: 80px;
-					height: 80px;
-					margin: 0!important;
-					border-radius: 50%!important;
+					background: none;
+					border: none;
+					box-shadow: none;
 				}
 			}
 			.login {
-				button {
-					font-size: 0.9em;
-				}
-				p {
-					margin-top: 9px;
+				margin-left: -1.1em;
+				background: #fc0;
+				width: 11em;
+				float: left;
+				.text {
+					font-size: 1em;
+
+					margin-left: 0;
+					text-align: left;
+					padding-left: 1em;
+
+					height: 30px;
+					float: left;
+					display: block;
+					white-space: pre-line;
 				}
 			}
 			.camera-snap {
+				float: right;
+				background: #ff0000;
+				width: 11em;
 				button {
 					&:hover { }
 				}
@@ -92,15 +88,16 @@ and (orientation: portrait) {
 			}
 			.photo {
 				button {
-					width: 90px;
-					height: 90px;
+					background: #ccc;
+					width: 200px;
+					height: 200px;
 					margin-right: -4px!important;
 					margin-top: -20px;
 					border-radius: 5px!important;
 					padding: 0!important;
 					.img-share {
-						width: 90px;
-						height: 90px;
+						width: 200px;
+						height: 200px;
 						margin: 0!important;
 						border-radius: 5px;
 					}
