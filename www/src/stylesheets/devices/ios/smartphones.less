@@ -51,21 +51,30 @@ and (orientation: portrait) {
 	#social {
 		.list-step-social {
 			.step-social {
-				&.login {
+				&.login,
+				&.camera-snap {
 					.btn {
 						height: 4.5em;
-						padding: 0;
+						margin-bottom: 1em;
+						.text {
+							width: 62%;
+							font-size: 0.84em;
+						}
 					}
-					.text {
-						width: 62%;
-						font-size: 0.87em;
+
+				}
+				&.login {
+					.btn {
+						.fa {
+							font-size: 2.5em;
+						}
+
 					}
 				}
 
 				&.camera-snap {
 					.btn {
-						height: 4.5em;
-						margin-bottom: 1em;
+
 					}
 				}
 			}
