@@ -16,7 +16,7 @@ var facebook = {
       authorize_url += "&display=touch";
       authorize_url += "&response_type=token";
       authorize_url += "&type=user_agent";
-      
+
     if(permissions !== '') {
       authorize_url += "&scope=" + permissions;
     }
@@ -48,7 +48,7 @@ var facebook = {
   onFacebookLogout: function() {
     var logout_url = encodeURI("https://www.facebook.com/logout.php?next=" + redirectUrl + "&access_token=" + window.localStorage.getItem('facebook_accessToken'));
     var appInBrowser = window.open(logout_url, '_blank', 'hidden=yes,location=no');
-    
+
     appInBrowser.addEventListener('loadstart', function(location) {
       if(location.url == logout_url) {
         // Do nothing
@@ -56,7 +56,7 @@ var facebook = {
       else if(location.url === redirectUrl + '#_=_' || location.url === redirectUrl) {
         window.localStorage.setItem('facebook_accessToken', null);
         appInBrowser.close();
-        alert('Deslogado!');
+        alert('Deslogado! Confira a foto na sua Timeline ou no Mural de fotos da IV Mostra!');
         $('#facebook_login').removeClass("logoff");
       }
     });
@@ -97,7 +97,7 @@ var facebook = {
     }else{
       return true;
     }
-    
+
   },
 
   /*
@@ -111,7 +111,7 @@ var facebook = {
   description: 'lorem lipsum'}
   */
   onFacebookPostFeed: function(post) {
-    
+
     if(window.localStorage.getItem('facebook_accessToken') === null) {
       return false;
     }
@@ -122,6 +122,6 @@ var facebook = {
       window.localStorage.setItem('facebook_uid', null);
     });
 
-   
+
   }
 };
