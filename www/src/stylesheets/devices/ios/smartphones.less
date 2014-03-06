@@ -50,28 +50,33 @@ and (orientation: portrait) {
 	// Social
 	#social {
 		.list-step-social {
-			.login {
-				height: 4.5em;
-				padding: 0;
-				.text {
-					width: 62%;
-					font-size: 0.9em;
+			.step-social {
+				&.login {
+					.btn {
+						height: 4.5em;
+						padding: 0;
+					}
+					.text {
+						width: 62%;
+						font-size: 0.87em;
+					}
 				}
-			}
-			.camera-snap {
-				height: 4.5em;
-				margin-bottom: 1em;
+
+				&.camera-snap {
+					.btn {
+						height: 4.5em;
+						margin-bottom: 1em;
+					}
+				}
 			}
 			.photo {
 				button {
 					height: 14em;
 				}
 			}
-			.share {
-
-			}
 		}
 	}
+
 	.ui-content {
 		.page-title {
 			margin: 20px 0 20px 15px;
