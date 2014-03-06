@@ -5688,13 +5688,18 @@ hr {
 .list-step-social .login {
   width: 45%;
   background: #f69522;
+  border: 3px solid #fac484;
   float: left;
+  border-radius: 0 5em 5em 0;
 }
 .list-step-social .login .text {
   text-align: left;
   float: left;
   display: block;
   white-space: pre-line;
+}
+.list-step-social .login .fa {
+  color: #ab6007;
 }
 .list-step-social .camera-snap {
   width: 45%;
@@ -5703,46 +5708,52 @@ hr {
   border: 3px solid #c9e28b;
   color: #ffffff;
   text-shadow: 1px 1px 1px #658021;
+  border-radius: 5em 0 0 5em;
 }
 .list-step-social .camera-snap:hover {
   color: #ffffff;
   text-shadow: 1px 1px 1px #658021;
 }
 .list-step-social .camera-snap .text {
-  margin-top: 22px;
+  text-align: right;
+  float: right;
+  display: block;
+  white-space: pre-line;
+}
+.list-step-social .camera-snap .fa {
+  color: #658021;
 }
 .list-step-social .photo button {
-  width: 90px;
-  height: 90px;
-  margin-right: -4px !important;
-  margin-top: -20px;
-  border: 2px solid #ccd1d9;
-  border-radius: 5px!important;
-  padding: 0!important;
   background: #e9ebee;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 0.5em;
 }
 .list-step-social .photo button .img-share {
-  width: 90px;
-  height: 90px;
-  margin: 0!important;
-  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0.5em;
 }
-.list-step-social .photo p {
-  margin-top: 12px;
+.list-step-social .share {
+  width: 90%;
+  margin: 1em 5% 0 5%;
 }
 .list-step-social .share button {
   background: #47639e;
-  border: 3px solid #fac484;
+  border: 3px solid #8399c8;
   color: #ffffff;
-  text-shadow: 1px 1px 1px #ab6007;
-  font-size: 0.9em;
+  text-shadow: 1px 1px 1px #273758;
 }
 .list-step-social .share button:hover {
   color: #ffffff;
-  text-shadow: 1px 1px 1px #ab6007;
+  text-shadow: 1px 1px 1px #273758;
 }
-.list-step-social .share p {
-  margin-top: 21px;
+.list-step-social .share .text {
+  text-align: right;
+  float: right;
+  display: block;
+  white-space: pre-line;
 }
 /* IV Mostra App
 * v0.1.x
@@ -6004,36 +6015,17 @@ hr {
   }
   #social .list-step-social .login {
     height: 4.5em;
+    padding: 0;
   }
   #social .list-step-social .login .text {
-    font-size: 1em;
+    width: 65%;
   }
   #social .list-step-social .camera-snap {
     height: 4.5em;
+    margin-bottom: 1em;
   }
   #social .list-step-social .photo button {
-    background: #ccc;
-    width: 200px;
-    height: 200px;
-    margin-right: -4px !important;
-    margin-top: -20px;
-    border-radius: 5px!important;
-    padding: 0!important;
-  }
-  #social .list-step-social .photo button .img-share {
-    width: 200px;
-    height: 200px;
-    margin: 0!important;
-    border-radius: 5px;
-  }
-  #social .list-step-social .photo p {
-    margin-top: 12px;
-  }
-  #social .list-step-social .share button {
-    font-size: 0.9em;
-  }
-  #social .list-step-social .share p {
-    margin-top: 21px;
+    height: 14em;
   }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
