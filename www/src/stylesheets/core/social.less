@@ -15,7 +15,9 @@
   .login {
     width: 45%;
     background: @orange;
+    border: 3px solid lighten(@orange, 20%);
     float: left;
+    border-radius: 0 5em 5em 0;
     .text {
       text-align: left;
       float: left;
@@ -30,12 +32,10 @@
     border: 3px solid lighten(@green, 20%);
     color: @white;
     text-shadow: 1px 1px 1px darken(@green, 20%);
+    border-radius: 5em 0 0 5em;
     &:hover {
       color: @white;
       text-shadow: 1px 1px 1px darken(@green, 20%);
-    }
-    .text {
-      margin-top: 22px;
     }
   }
   .photo {
