@@ -64,26 +64,34 @@
         }
       }
     }
-  }
 
-  .share {
-    width: 90%;
-    margin: 1em 5% 0 5%;
-    button {
-      background: @facebook-color;
-      border: 3px solid lighten(@facebook-color, 20%);
-      color: @white;
-      text-shadow: 1px 1px 1px darken(@facebook-color, 20%);
-      &:hover {
+    &.share {
+      width: 60%;
+      float: left;
+      .btn {
+        background: @facebook-color;
+        border: 3px solid lighten(@facebook-color, 20%);
         color: @white;
         text-shadow: 1px 1px 1px darken(@facebook-color, 20%);
+        border-radius: 0 5em 5em 0;
+        height: 4.5em;
+        &:active {
+          color: @white;
+          text-shadow: 1px 1px 1px darken(@facebook-color, 20%);
+        }
+        .text {
+          width: 80%;
+          font-size: 0.85em;
+          text-align: left;
+          float: left;
+          display: block;
+          white-space: pre-line;
+        }
+        .fa {
+
+        }
       }
-    }
-    .text {
-      text-align: right;
-      float: right;
-      display: block;
-      white-space: pre-line;
+
     }
   }
 }
