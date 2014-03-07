@@ -5744,7 +5744,7 @@ hr {
   margin: 0;
 }
 .list-step-social .step-social.share {
-  width: 50%;
+  width: 45%;
   float: left;
 }
 .list-step-social .step-social.share .btn {
@@ -5768,7 +5768,7 @@ hr {
   white-space: pre-line;
 }
 .list-step-social .step-social.help {
-  width: 40%;
+  width: 45%;
   float: right;
 }
 .list-step-social .step-social.help .btn {
@@ -6064,6 +6064,9 @@ hr {
   }
   #social .list-step-social .step-social.photo .btn {
     height: 14em;
+  }
+  #social .list-step-social .step-social.share .btn .text {
+    font-size: 0.84em;
   }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
