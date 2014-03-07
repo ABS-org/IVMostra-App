@@ -4,8 +4,21 @@
 */
 
 
+.page-title {
+  font-weight: 500;
+  color: darken(@gray, 20%);
+}
+
 // Home
 #one {
+  .paragraph {
+    width: 90%;
+    text-align: left;
+    color: darken(@gray, 20%);
+    .title {
+      font-weight: normal;
+    }
+  }
   .img-home {
     background-size: 100% 100%;
     width: 100%;
@@ -34,37 +47,10 @@
     }
   }
 }
-.page-title {
-  font-weight: 500;
-  color: darken(@gray, 20%);
-  small { }
-  .tiny {
-    position: relative;
-  }
-}
-.paragraph {
-  width: 90%;
-  font-size: 1.15em!important;
-  margin-top: 1.2em!important;
-  text-align: left;
-  color: darken(@gray, 20%);
-  small {
-    margin-top: 0.5em!important;
-    display: block;
-  }
-  .title {
-    font-size: 1.3em!important;
-    font-weight: normal;
-    margin-bottom: 0.6em;
-    strong {
-      font-size: 1.3em;
-    }
-  }
-}
 
+// Help Dialog
 #help-dialog {
   .page-title {
-    font-size: 2em;
     text-shadow: none;
   }
 }
