@@ -5641,6 +5641,18 @@ hr {
 * v0.1.x
 * core/sections.less
 */
+.page-title {
+  font-weight: 500;
+  color: #3c4450;
+}
+#one .paragraph {
+  width: 90%;
+  text-align: left;
+  color: #3c4450;
+}
+#one .paragraph .title {
+  font-weight: normal;
+}
 #one .img-home {
   background-size: 100% 100%;
   width: 100%;
@@ -5658,31 +5670,8 @@ hr {
   font-size: 0.4em;
   line-height: 1.15em;
 }
-.page-title {
-  font-weight: 500;
-  color: #3c4450;
-}
-.page-title .tiny {
-  position: relative;
-}
-.paragraph {
-  width: 90%;
-  font-size: 1.15em!important;
-  margin-top: 1.2em!important;
-  text-align: left;
-  color: #3c4450;
-}
-.paragraph small {
-  margin-top: 0.5em!important;
-  display: block;
-}
-.paragraph .title {
-  font-size: 1.3em!important;
-  font-weight: normal;
-  margin-bottom: 0.6em;
-}
-.paragraph .title strong {
-  font-size: 1.3em;
+#help-dialog .page-title {
+  text-shadow: none;
 }
 /* IV Mostra App
 * v0.1.x
@@ -6027,7 +6016,7 @@ hr {
 * v0.1.x
 * devices/ios/smartphones.less
 */
-@media only screen and (min-device-width: 320px), and (max-device-width: 568px), and (-webkit-min-device-pixel-ratio: 2), and (min-device-pixel-ratio: 2), and (orientation: portrait) {
+@media only screen and (min-device-width: 320px), and (min-device-width: 568px), and (-webkit-min-device-pixel-ratio: 2), and (min-device-pixel-ratio: 2), and (orientation: portrait) {
   body {
     background-image: url(../../img/background-320x568@2x.png);
     background-size: 100%;
@@ -6063,6 +6052,8 @@ hr {
     font-size: 2.5em;
   }
   #social .list-step-social .step-social.photo .btn {
+    background-image: url('../../img/bg-photo-290x225@2x.png');
+    background-size: 100%;
     height: 14em;
   }
   #social .list-step-social .step-social.share .btn .text {
@@ -6079,6 +6070,30 @@ hr {
   .ui-content .page-title .tiny {
     font-size: 0.42em;
     top: 4px;
+  }
+  #help-dialog .page-title {
+    font-size: 2em;
+  }
+}
+@media (max-height: 480px) {
+  #one .paragraph {
+    font-size: 1em;
+    margin-top: 0;
+  }
+  #prog .ui-content .btn-default {
+    margin-top: 0;
+  }
+  #social .list-step-social .step-social.login .btn,
+  #social .list-step-social .step-social.camera-snap .btn {
+    height: 4em;
+    margin-bottom: 0.5em;
+  }
+  #social .list-step-social .step-social.photo .btn {
+    background-image: url('../../img/bg-photo-290x225@2x.png');
+    background-size: 100%;
+    width: 60%;
+    height: 9em;
+    margin-left: 20%;
   }
 }
 @media (min-width: 768px) {

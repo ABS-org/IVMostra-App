@@ -20,7 +20,7 @@ var exports=exports||this;exports.OAuth=function(e){function t(e){var t=argument
 // APP FACEBOOK ID
 var appId = '400010580144952';
 //CONFIGURE URL IN FACEBOOK APP->Internet por celular->Mobile Site URL
-var redirectUrl = 'http://www.mostrasaude.net/';
+var redirectUrl = 'https://www.tintup.com/felipecalv';
 // APP FACEBOOK PERMISSIONS
 var permissions = 'email,publish_actions';
 
