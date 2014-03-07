@@ -8,6 +8,57 @@
 	body {
 		background: url(../../img/background-768x1024.png)!important;
 	}
+
+	// Social
+	#social {
+		.list-step-social {
+			.step-social {
+				&.login,
+				&.camera-snap {
+					.btn {
+						height: 4.5em;
+						margin-bottom: 1em;
+						.text {
+							width: 62%;
+							font-size: 0.84em;
+						}
+					}
+
+				}
+				&.login {
+					.btn {
+						.fa {
+							font-size: 2.5em;
+						}
+
+					}
+				}
+
+				&.camera-snap {
+					.btn {
+
+					}
+				}
+
+				&.photo {
+					.btn {
+						background-image: url('../../img/bg-photo-290x225@2x.png');
+						background-size: 100%;
+						height: 33em;
+					}
+				}
+
+				&.share {
+					.btn {
+						.text {
+							font-size: 0.84em;
+						}
+					}
+				}
+			}
+		}
+	}
+
 	#map_canvas {
 	  height: 826px!important;
 	  margin-top: 9px;
@@ -84,74 +135,4 @@
 		margin-bottom: 40px;
 	}
 
-	.list-step-social {
-		.separator {
-			width: 16px;
-			height: 50px;
-			margin-left: 51%;
-			margin-top: -4px;
-		}
-		.step-social {
-			height: 130px;
-			width: 60%;
-			margin-left: 5%;
-			p {
-				width: 180px;
-				font-size: 1.5em;
-				line-height: 1.2em;
-				padding: 6px;
-				border-radius: 6px;
-			}
-			button {
-				width: 130px;
-				height: 130px;
-				margin: 0 35px 0 0!important;
-				border-radius: 50%!important;
-			}
-		}
-		.login {
-			button {
-				font-size: 1.3em;
-			}
-			p {
-				margin-top: 35px;
-			}
-		}
-		.camera-snap {
-			button {
-				font-size: 2em;
-			}
-			p {
-				margin-top: 40px;
-			}
-		}
-		.photo {
-			button {
-				width: 150px;
-				height: 150px;
-				margin-right: 20px!important;
-				margin-top: -20px;
-				border-radius: 5px!important;
-				padding: 0!important;
-				.img-share {
-					width: 150px;
-					height: 150px;
-					margin: 0!important;
-					border-radius: 5px;
-				}
-			}
-			p {
-				margin-top: 40px;
-			}
-		}
-		.share {
-			button {
-				font-size: 1.4em;
-				&:hover { }
-			}
-			p {
-				margin-top: 45px;
-			}
-		}
-	}
 }
