@@ -5673,6 +5673,11 @@ hr {
 #help-dialog .page-title {
   text-shadow: none;
 }
+.cp-logo-section {
+  margin: 1.5em 0 0 2em;
+  width: 18.3em;
+  height: 6.1em;
+}
 /* IV Mostra App
 * v0.1.x
 * core/social.less
@@ -6089,6 +6094,9 @@ hr {
   #prog .ui-content .btn-default {
     margin-top: 0;
   }
+  #maps #map_canvas {
+    height: 24em;
+  }
   #social .list-step-social .step-social.login .btn,
   #social .list-step-social .step-social.camera-snap .btn {
     height: 4em;
@@ -6119,24 +6127,56 @@ hr {
   }
   #social .list-step-social .step-social.login .btn,
   #social .list-step-social .step-social.camera-snap .btn {
-    height: 4.5em;
+    width: 60%;
+    height: 6em;
     margin-bottom: 1em;
   }
   #social .list-step-social .step-social.login .btn .text,
   #social .list-step-social .step-social.camera-snap .btn .text {
     width: 62%;
-    font-size: 0.84em;
+    margin-left: 10%;
+    font-size: 1.25em;
+  }
+  #social .list-step-social .step-social.login .btn .fa,
+  #social .list-step-social .step-social.camera-snap .btn .fa {
+    font-size: 3.25em;
+  }
+  #social .list-step-social .step-social.login .btn .text {
+    margin-left: 10%;
+  }
+  #social .list-step-social .step-social.camera-snap .btn .text {
+    margin-right: 10%;
   }
   #social .list-step-social .step-social.login .btn .fa {
-    font-size: 2.5em;
+    font-size: 3.5em;
   }
   #social .list-step-social .step-social.photo .btn {
     background-image: url('../../img/bg-photo-290x225@2x.png');
     background-size: 100%;
-    height: 33em;
+    height: 30.5em;
+  }
+  #social .list-step-social .step-social.share .btn {
+    width: 60%;
+    height: 6em;
   }
   #social .list-step-social .step-social.share .btn .text {
-    font-size: 0.84em;
+    font-size: 1.25em;
+  }
+  #social .list-step-social .step-social.share .btn .fa {
+    font-size: 3.25em;
+  }
+  #social .list-step-social .step-social.help {
+    width: 28%;
+  }
+  #social .list-step-social .step-social.help .btn {
+    height: 6em;
+  }
+  #social .list-step-social .step-social.help .btn .text {
+    width: 60%;
+    font-size: 1.25em;
+  }
+  #social .list-step-social .step-social.help .btn .fa {
+    font-size: 3.25em;
   }
   .navbar-main-bottom-fixed .ui-btn {
     width: 6em;
@@ -6262,6 +6302,11 @@ hr {
     padding: 20px 0 20px 0;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  .cp-logo-section {
+    margin: 1.5em 0 0 2em;
+    width: 50em;
+    height: 20em;
   }
 }
 @media (min-width: 360px) {
