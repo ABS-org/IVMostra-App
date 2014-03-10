@@ -5670,8 +5670,78 @@ hr {
   font-size: 0.4em;
   line-height: 1.15em;
 }
+#help-dialog .ui-header {
+  border: none;
+}
 #help-dialog .page-title {
+  text-align: left;
+  width: 90%;
+  position: relative;
+  top: -0.1em;
+  margin: 0 0 -1em 5%;
   text-shadow: none;
+  font-size: 2em!important;
+  line-height: 0.85em;
+}
+#help-dialog .page-title .fa {
+  font-size: 1.3em;
+  margin-left: -10px;
+}
+#help-dialog .ui-content {
+  padding: 20px;
+}
+#help-dialog .ui-content .paragraph {
+  font-size: 0.85em;
+  line-height: 1.2em;
+  margin: 0.8em 0;
+}
+#help-dialog .ui-content .btn {
+  background: #a3cd3a;
+  color: #455816;
+  padding: 0.5em 41%;
+  position: relative;
+  top: 0.5em;
+  font-size: 1.3em;
+  border-radius: 4px;
+  border: 3px solid #c9e28b;
+}
+#creditos ul li {
+  margin: 0.35em 0;
+}
+#creditos .ui-header {
+  border: none;
+}
+#creditos .page-title {
+  text-align: left;
+  width: 90%;
+  position: relative;
+  top: -0.1em;
+  margin: 0 0 -1em 5%;
+  text-shadow: none;
+  font-size: 2em!important;
+  line-height: 0.85em;
+}
+#creditos .page-title .fa {
+  font-size: 1.3em;
+  margin-left: -10px;
+}
+#creditos .ui-content {
+  padding: 20px;
+}
+#creditos .ui-content .paragraph {
+  font-size: 0.85em;
+  line-height: 1.2em;
+  margin: 0.8em 0;
+}
+#creditos .ui-content .btn {
+  background: #a3cd3a;
+  color: #455816;
+  padding: 0.5em 41%;
+  position: relative;
+  top: 0.5em;
+  font-size: 1.3em;
+  border-radius: 4px;
+  border: 3px solid #c9e28b;
 }
 .cp-logo-section {
   margin: 1.5em 0 0 2em;
@@ -5687,7 +5757,7 @@ hr {
   float: left;
 }
 .list-step-social .step-social.login .btn {
-  width: 90%;
+  width: 96%;
   background: #f69522;
   border: 3px solid #fac484;
   float: left;
@@ -5707,7 +5777,7 @@ hr {
   float: right;
 }
 .list-step-social .step-social.camera-snap .btn {
-  width: 90%;
+  width: 96%;
   float: right;
   background: #a3cd3a;
   border: 3px solid #c9e28b;
@@ -5728,9 +5798,10 @@ hr {
 }
 .list-step-social .step-social.photo .btn {
   background: #e9ebee;
-  width: 90%;
+  width: 96%;
   margin-left: 5%;
   border: none;
+  padding: 0;
 }
 .list-step-social .step-social.photo .btn .img-share {
   width: 100%;
@@ -5738,7 +5809,7 @@ hr {
   margin: 0;
 }
 .list-step-social .step-social.share {
-  width: 45%;
+  width: 50%;
   float: left;
 }
 .list-step-social .step-social.share .btn {
@@ -6042,11 +6113,11 @@ hr {
   }
   #social .list-step-social .step-social.login .btn .text,
   #social .list-step-social .step-social.camera-snap .btn .text {
-    width: 62%;
+    width: 70%;
     font-size: 0.84em;
   }
   #social .list-step-social .step-social.login .btn .fa {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   #social .list-step-social .step-social.photo .btn {
     background-image: url('../../img/bg-photo-290x225@2x.png');
@@ -6054,7 +6125,7 @@ hr {
     height: 14em;
   }
   #social .list-step-social .step-social.share .btn .text {
-    font-size: 0.84em;
+    font-size: 0.8em;
   }
   .ui-content .page-title {
     margin: 20px 0 20px 15px;
